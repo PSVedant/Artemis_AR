@@ -1,0 +1,41 @@
+customer_id,customer_name,industry,annual_revenue_inr,relationship_tier,importance_score,payment_history_score,preferred_channel,language_pref
+CUST0001,Gould-Foster,Manufacturing,2210000.0,Standard,0.184,0.611,call,English
+CUST0002,Jones PLC,Logistics,853000.0,New,0.071,0.777,call,Hinglish
+CUST0003,Diaz Inc,Healthcare,24102000.0,VIP,1.0,0.853,whatsapp,English
+CUST0004,"Lewis, Miller and Barnes",IT Services,1152000.0,New,0.096,0.666,call,English
+CUST0005,Davis Group,Healthcare,576000.0,New,0.048,0.469,email,Hinglish
+CUST0006,Serrano Inc,Healthcare,5372000.0,Standard,0.448,0.321,call,Hinglish
+CUST0007,Mccoy PLC,Construction,947000.0,New,0.079,0.449,whatsapp,Hinglish
+CUST0008,Ray Group,Textiles,4995000.0,Standard,0.416,0.411,whatsapp,Hinglish
+CUST0009,Cherry Inc,Logistics,10004000.0,VIP,0.834,0.766,whatsapp,English
+CUST0010,"Garrison, Roberts and Thomas",F&B,2642000.0,Standard,0.22,0.807,email,English
+CUST0011,Duncan PLC,Manufacturing,1475000.0,New,0.123,0.359,email,English
+CUST0012,"White, Perkins and Fowler",F&B,1851000.0,New,0.154,0.296,whatsapp,English
+CUST0013,Davis-Joseph,Manufacturing,423000.0,New,0.035,0.485,call,English
+CUST0014,"Brown, Harris and Becker",Healthcare,1003000.0,New,0.084,0.134,whatsapp,Hinglish
+CUST0015,Waters-Owens,Retail,3094000.0,Standard,0.258,0.561,email,Hinglish
+CUST0016,Ward-Wright,Construction,7802000.0,Standard,0.65,0.804,email,Hinglish
+CUST0017,Hale and Sons,Construction,1125000.0,New,0.094,0.275,email,English
+CUST0018,Andrews PLC,Logistics,7171000.0,Standard,0.598,0.227,email,English
+CUST0019,Golden-Blair,Construction,2469000.0,Standard,0.206,0.28,whatsapp,Hinglish
+CUST0020,Lynch-Jones,Manufacturing,6245000.0,Standard,0.52,0.383,whatsapp,Hinglish
+CUST0021,"Barnes, Sherman and Hernandez",F&B,1433000.0,New,0.119,0.69,call,English
+CUST0022,Fisher-Hayden,Retail,2354000.0,Standard,0.196,0.605,call,Hinglish
+CUST0023,Duran PLC,Logistics,1749000.0,New,0.146,0.606,email,English
+CUST0024,Peterson-Bell,Construction,1954000.0,New,0.163,0.643,whatsapp,Hinglish
+CUST0025,Riley-Bryant,Manufacturing,11187000.0,VIP,0.932,0.891,whatsapp,Hinglish
+CUST0026,Duffy Group,Manufacturing,8159000.0,VIP,0.68,0.284,whatsapp,Hinglish
+CUST0027,"Beck, Brown and Miles",Manufacturing,3657000.0,Standard,0.305,0.922,email,English
+CUST0028,"Lane, Maldonado and Griffin",Textiles,5311000.0,Standard,0.443,0.604,call,English
+CUST0029,"Cruz, Barnett and Johnson",Textiles,1610000.0,New,0.134,0.624,email,English
+CUST0030,Kelly-Carr,IT Services,2429000.0,Standard,0.202,0.792,email,Hinglish
+CUST0031,Brown-Tate,IT Services,5011000.0,Standard,0.418,0.439,whatsapp,Hinglish
+CUST0032,Rodgers Group,IT Services,481000.0,New,0.04,0.446,call,English
+CUST0033,Rangel-Crawford,IT Services,1858000.0,New,0.155,0.649,email,Hinglish
+CUST0034,Cole PLC,F&B,1184000.0,New,0.099,0.31,call,Hinglish
+CUST0035,Ware-Fuentes,F&B,1914000.0,New,0.16,0.906,email,English
+CUST0036,"Ramirez, Perry and Howard",IT Services,1032000.0,New,0.086,0.8,email,English
+CUST0037,Rosario-Hernandez,Manufacturing,5487000.0,Standard,0.457,0.296,whatsapp,English
+CUST0038,Hernandez Ltd,Textiles,520000.0,New,0.043,0.328,call,Hinglish
+CUST0039,Smith PLC,Retail,2172000.0,Standard,0.181,0.73,whatsapp,Hinglish
+CUST0040,Baker Inc,Healthcare,11516000.0,VIP,0.96,0.286,call,English
