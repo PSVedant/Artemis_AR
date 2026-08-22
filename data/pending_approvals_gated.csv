@@ -1,0 +1,10 @@
+invoice_id,customer_id,date,action,reason,importance_score,remaining_amount,days_overdue,resolution
+INV00006,CUST0026,2026-03-11,escalate_collections,Escalation gate satisfied. Customer importance_score=0.68 >= threshold -- human approval required before this fires.,0.68,81318.93,65,PENDING
+INV00055,CUST0037,2026-03-11,escalate_collections,Escalation gate satisfied. Customer importance_score=0.457 >= threshold -- human approval required before this fires.,0.457,770511.39,87,PENDING
+INV00009,CUST0040,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.96 >= threshold -- human approval required before this fires.,0.96,417690.25,48,PENDING
+INV00021,CUST0040,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.96 >= threshold -- human approval required before this fires.,0.96,396351.47,20,PENDING
+INV00024,CUST0020,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.52 >= threshold -- human approval required before this fires.,0.52,375292.1,2,PENDING
+INV00036,CUST0028,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.443 >= threshold -- human approval required before this fires.,0.443,702445.2,16,PENDING
+INV00050,CUST0028,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.443 >= threshold -- human approval required before this fires.,0.443,348781.91,5,PENDING
+INV00074,CUST0025,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.932 >= threshold -- human approval required before this fires.,0.932,53667.01,40,PENDING
+INV00075,CUST0031,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.418 >= threshold -- human approval required before this fires.,0.418,268797.71,27,PENDING

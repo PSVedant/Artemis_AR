@@ -41,6 +41,9 @@ class InvoiceState:
     remaining_amount: float = 0.0
     promise_date: Optional[date] = None
     fatigue: float = 0.0  # cumulative annoyance, reduces future responsiveness
+    pending_action: Optional[str] = None
+    pending_reason: Optional[str] = None
+    pending_since_day: Optional[int] = None
 
 
 @dataclass

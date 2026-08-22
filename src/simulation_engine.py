@@ -161,13 +161,38 @@ def resolve_promises(states: dict, customers_by_id: dict, today: date, audit_tra
             audit_trail.append(entry)
 
 
-def run_simulation(decide_fn=decide_next_action, seed=11, policy: dict = None):
+def run_simulation(decide_fn=decide_next_action, seed=11, policy=None, gated=False,
+                    resume_states=None, resume_audit_trail=None, resume_pending=None):
+    """
+    gated=False (default): old behavior, used for Day 3/4/5 batch comparisons --
+      human-approval-required actions execute immediately and are just logged
+      as an approval event (auto-approved for batch analysis purposes).
+    gated=True: REAL gate. When an action requires human approval, the
+      invoice's outcome is NOT sampled -- it's marked 'awaiting_approval'
+      and excluded from further decisions until resolved by
+      src/resolve_approvals.py, which uses the same real data and the same
+      real hidden response model, just triggered by an actual human
+      decision instead of auto-approval.
+
+    resume_states / resume_audit_trail / resume_pending: pass these to
+    continue a simulation using state that was previously paused and then
+    resolved via the approval CLI, instead of starting fresh.
+    """
     policy = policy or POLICY
-    random.seed(seed)  # reset so both policies see the identical outcome-sampling sequence
-    states, customers_by_id = load_states()
+
+    if resume_states is not None:
+        states = resume_states
+        _, customers_by_id = load_states()  # reload static reference data (real, not fabricated)
+        audit_trail = resume_audit_trail if resume_audit_trail is not None else []
+        pending_human_approvals = resume_pending if resume_pending is not None else []
+        random.seed(seed + 1)  # new process, new seed -- documented, not hidden
+    else:
+        random.seed(seed)
+        states, customers_by_id = load_states()
+        audit_trail = []
+        pending_human_approvals = []
+
     response_model = load_hidden_response_model()
-    audit_trail = []
-    pending_human_approvals = []
 
     for day_offset in range(SIM_DAYS):
         today = SIM_START_DATE + timedelta(days=day_offset)
@@ -184,16 +209,41 @@ def run_simulation(decide_fn=decide_next_action, seed=11, policy: dict = None):
                 continue
 
             if decision.requires_human_approval:
-                # simulation auto-approves and logs it as a distinct event --
-                # in the real product this would pause for a manager to click
-                # approve/deny (Day 6+ human-in-the-loop UI)
-                pending_human_approvals.append({
-                    "invoice_id": state.invoice_id,
-                    "date": today.isoformat(),
-                    "action": decision.action,
-                    "reason": decision.reason,
-                    "resolution": "auto-approved for simulation",
-                })
+                if gated:
+                    # REAL gate: do not act. Park the invoice.
+                    state.status = "awaiting_approval"
+                    state.pending_action = decision.action
+                    state.pending_reason = decision.reason
+                    state.pending_since_day = day_offset
+                    pending_human_approvals.append({
+                        "invoice_id": state.invoice_id,
+                        "customer_id": state.customer_id,
+                        "date": today.isoformat(),
+                        "action": decision.action,
+                        "reason": decision.reason,
+                        "importance_score": state.importance_score,
+                        "remaining_amount": round(state.remaining_amount, 2),
+                        "days_overdue": state.days_overdue,
+                        "resolution": "PENDING",
+                    })
+                    audit_trail.append({
+                        "invoice_id": state.invoice_id,
+                        "customer_id": state.customer_id,
+                        "date": today.isoformat(),
+                        "action": decision.action,
+                        "outcome": "gated_pending_approval",
+                        "amount_recovered": 0.0,
+                        "status_after": "awaiting_approval",
+                    })
+                    continue
+                else:
+                    pending_human_approvals.append({
+                        "invoice_id": state.invoice_id,
+                        "date": today.isoformat(),
+                        "action": decision.action,
+                        "reason": decision.reason,
+                        "resolution": "auto-approved for simulation",
+                    })
 
             outcome = sample_outcome(state, decision.action, response_model)
             apply_outcome(state, decision.action, outcome, today, audit_trail)

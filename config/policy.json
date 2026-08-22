@@ -50,5 +50,5 @@
     "escalate_collections"
   ],
 
-  "stopping_statuses": ["paid", "promised", "written_off", "exhausted"]
+  "stopping_statuses": ["paid", "promised", "written_off", "exhausted", "awaiting_approval", "manual_review_denied"]
 }

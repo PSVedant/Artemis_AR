@@ -1,0 +1,2179 @@
+{
+  "INV00001": {
+    "invoice_id": "INV00001",
+    "customer_id": "CUST0019",
+    "days_overdue": 1,
+    "risk_segment": "high",
+    "importance_score": 0.206,
+    "status": "paid",
+    "prior_contact_count": 3,
+    "last_contact_date": "2026-03-11",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "pay"
+      ]
+    ],
+    "original_amount": 364972.32,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.1124,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00002": {
+    "invoice_id": "INV00002",
+    "customer_id": "CUST0017",
+    "days_overdue": 6,
+    "risk_segment": "high",
+    "importance_score": 0.094,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ]
+    ],
+    "original_amount": 42040.68,
+    "remaining_amount": 42040.68,
+    "promise_date": null,
+    "fatigue": 0.32789999999999997,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00003": {
+    "invoice_id": "INV00003",
+    "customer_id": "CUST0020",
+    "days_overdue": 4,
+    "risk_segment": "medium",
+    "importance_score": 0.52,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 314576.89,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0918,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00004": {
+    "invoice_id": "INV00004",
+    "customer_id": "CUST0031",
+    "days_overdue": 5,
+    "risk_segment": "medium",
+    "importance_score": 0.418,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-19",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "promise"
+      ],
+      [
+        "phone_call",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ]
+    ],
+    "original_amount": 411217.48,
+    "remaining_amount": 411217.48,
+    "promise_date": "2026-03-14",
+    "fatigue": 0.19999999999999998,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00005": {
+    "invoice_id": "INV00005",
+    "customer_id": "CUST0001",
+    "days_overdue": 2,
+    "risk_segment": "medium",
+    "importance_score": 0.184,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 475638.57,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0777,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00006": {
+    "invoice_id": "INV00006",
+    "customer_id": "CUST0026",
+    "days_overdue": 65,
+    "risk_segment": "high",
+    "importance_score": 0.68,
+    "status": "manual_review_denied",
+    "prior_contact_count": 3,
+    "last_contact_date": "2026-03-11",
+    "action_history": [
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "phone_call",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ]
+    ],
+    "original_amount": 81318.93,
+    "remaining_amount": 81318.93,
+    "promise_date": null,
+    "fatigue": 0.6409,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00007": {
+    "invoice_id": "INV00007",
+    "customer_id": "CUST0034",
+    "days_overdue": 55,
+    "risk_segment": "high",
+    "importance_score": 0.099,
+    "status": "paid",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "phone_call",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "pay"
+      ]
+    ],
+    "original_amount": 577054.85,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.3729,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00008": {
+    "invoice_id": "INV00008",
+    "customer_id": "CUST0039",
+    "days_overdue": 66,
+    "risk_segment": "high",
+    "importance_score": 0.181,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "phone_call",
+        "pay"
+      ]
+    ],
+    "original_amount": 132328.57,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.12190000000000001,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00009": {
+    "invoice_id": "INV00009",
+    "customer_id": "CUST0040",
+    "days_overdue": 48,
+    "risk_segment": "high",
+    "importance_score": 0.96,
+    "status": "manual_review_denied",
+    "prior_contact_count": 3,
+    "last_contact_date": "2026-03-11",
+    "action_history": [
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "phone_call",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ]
+    ],
+    "original_amount": 417690.25,
+    "remaining_amount": 417690.25,
+    "promise_date": null,
+    "fatigue": 0.2207,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00010": {
+    "invoice_id": "INV00010",
+    "customer_id": "CUST0028",
+    "days_overdue": 12,
+    "risk_segment": "medium",
+    "importance_score": 0.443,
+    "status": "paid",
+    "prior_contact_count": 3,
+    "last_contact_date": "2026-03-11",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "pay"
+      ]
+    ],
+    "original_amount": 426149.47,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.1266,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00011": {
+    "invoice_id": "INV00011",
+    "customer_id": "CUST0033",
+    "days_overdue": 47,
+    "risk_segment": "medium",
+    "importance_score": 0.155,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 641404.24,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0547,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00012": {
+    "invoice_id": "INV00012",
+    "customer_id": "CUST0015",
+    "days_overdue": 2,
+    "risk_segment": "medium",
+    "importance_score": 0.258,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "partial"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "phone_call",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ]
+    ],
+    "original_amount": 298155.37,
+    "remaining_amount": 214154.66,
+    "promise_date": null,
+    "fatigue": 0.1847,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00013": {
+    "invoice_id": "INV00013",
+    "customer_id": "CUST0007",
+    "days_overdue": 42,
+    "risk_segment": "medium",
+    "importance_score": 0.079,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 507797.18,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0733,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00014": {
+    "invoice_id": "INV00014",
+    "customer_id": "CUST0035",
+    "days_overdue": 11,
+    "risk_segment": "low",
+    "importance_score": 0.16,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 373704.59,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0767,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00015": {
+    "invoice_id": "INV00015",
+    "customer_id": "CUST0005",
+    "days_overdue": 45,
+    "risk_segment": "medium",
+    "importance_score": 0.048,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 532550.1,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0206,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00016": {
+    "invoice_id": "INV00016",
+    "customer_id": "CUST0005",
+    "days_overdue": 12,
+    "risk_segment": "medium",
+    "importance_score": 0.048,
+    "status": "paid",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "pay"
+      ]
+    ],
+    "original_amount": 73443.25,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.3045,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00017": {
+    "invoice_id": "INV00017",
+    "customer_id": "CUST0017",
+    "days_overdue": 4,
+    "risk_segment": "high",
+    "importance_score": 0.094,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 525196.84,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0739,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00018": {
+    "invoice_id": "INV00018",
+    "customer_id": "CUST0030",
+    "days_overdue": 8,
+    "risk_segment": "low",
+    "importance_score": 0.202,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "promise"
+      ]
+    ],
+    "original_amount": 729716.33,
+    "remaining_amount": 0.0,
+    "promise_date": "2026-03-20",
+    "fatigue": 0.0785,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00019": {
+    "invoice_id": "INV00019",
+    "customer_id": "CUST0019",
+    "days_overdue": 85,
+    "risk_segment": "high",
+    "importance_score": 0.206,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "phone_call",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ]
+    ],
+    "original_amount": 170657.75,
+    "remaining_amount": 170657.75,
+    "promise_date": null,
+    "fatigue": 0.669,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00020": {
+    "invoice_id": "INV00020",
+    "customer_id": "CUST0039",
+    "days_overdue": 62,
+    "risk_segment": "high",
+    "importance_score": 0.181,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "firm_reminder",
+        "promise"
+      ]
+    ],
+    "original_amount": 558916.16,
+    "remaining_amount": 0.0,
+    "promise_date": "2026-03-08",
+    "fatigue": 0.0554,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00021": {
+    "invoice_id": "INV00021",
+    "customer_id": "CUST0040",
+    "days_overdue": 20,
+    "risk_segment": "high",
+    "importance_score": 0.96,
+    "status": "manual_review_denied",
+    "prior_contact_count": 3,
+    "last_contact_date": "2026-03-11",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ]
+    ],
+    "original_amount": 396351.47,
+    "remaining_amount": 396351.47,
+    "promise_date": null,
+    "fatigue": 0.1576,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00022": {
+    "invoice_id": "INV00022",
+    "customer_id": "CUST0007",
+    "days_overdue": 22,
+    "risk_segment": "medium",
+    "importance_score": 0.079,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 571463.67,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0209,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00023": {
+    "invoice_id": "INV00023",
+    "customer_id": "CUST0019",
+    "days_overdue": 8,
+    "risk_segment": "high",
+    "importance_score": 0.206,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 446025.06,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0225,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00024": {
+    "invoice_id": "INV00024",
+    "customer_id": "CUST0020",
+    "days_overdue": 2,
+    "risk_segment": "medium",
+    "importance_score": 0.52,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ]
+    ],
+    "original_amount": 375292.1,
+    "remaining_amount": 375292.1,
+    "promise_date": null,
+    "fatigue": 0.5452,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00025": {
+    "invoice_id": "INV00025",
+    "customer_id": "CUST0033",
+    "days_overdue": 8,
+    "risk_segment": "medium",
+    "importance_score": 0.155,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 757286.01,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0766,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00026": {
+    "invoice_id": "INV00026",
+    "customer_id": "CUST0014",
+    "days_overdue": 2,
+    "risk_segment": "high",
+    "importance_score": 0.084,
+    "status": "paid",
+    "prior_contact_count": 3,
+    "last_contact_date": "2026-03-11",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "pay"
+      ]
+    ],
+    "original_amount": 426391.58,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.105,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00027": {
+    "invoice_id": "INV00027",
+    "customer_id": "CUST0024",
+    "days_overdue": 35,
+    "risk_segment": "medium",
+    "importance_score": 0.163,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ]
+    ],
+    "original_amount": 711186.8,
+    "remaining_amount": 711186.8,
+    "promise_date": null,
+    "fatigue": 0.36310000000000003,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00028": {
+    "invoice_id": "INV00028",
+    "customer_id": "CUST0024",
+    "days_overdue": 31,
+    "risk_segment": "medium",
+    "importance_score": 0.163,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "promise"
+      ]
+    ],
+    "original_amount": 139866.24,
+    "remaining_amount": 0.0,
+    "promise_date": "2026-03-16",
+    "fatigue": 0.0769,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00029": {
+    "invoice_id": "INV00029",
+    "customer_id": "CUST0032",
+    "days_overdue": 11,
+    "risk_segment": "medium",
+    "importance_score": 0.04,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "promise"
+      ]
+    ],
+    "original_amount": 125455.17,
+    "remaining_amount": 0.0,
+    "promise_date": "2026-03-11",
+    "fatigue": 0.0205,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00030": {
+    "invoice_id": "INV00030",
+    "customer_id": "CUST0023",
+    "days_overdue": 7,
+    "risk_segment": "medium",
+    "importance_score": 0.146,
+    "status": "paid",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "pay"
+      ]
+    ],
+    "original_amount": 269769.86,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.3545,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00031": {
+    "invoice_id": "INV00031",
+    "customer_id": "CUST0022",
+    "days_overdue": 14,
+    "risk_segment": "medium",
+    "importance_score": 0.196,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "promise"
+      ]
+    ],
+    "original_amount": 24201.47,
+    "remaining_amount": 0.0,
+    "promise_date": "2026-03-16",
+    "fatigue": 0.0783,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00032": {
+    "invoice_id": "INV00032",
+    "customer_id": "CUST0019",
+    "days_overdue": 27,
+    "risk_segment": "high",
+    "importance_score": 0.206,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "partial"
+      ],
+      [
+        "phone_call",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ]
+    ],
+    "original_amount": 799052.12,
+    "remaining_amount": 423384.12,
+    "promise_date": null,
+    "fatigue": 0.17980000000000002,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00033": {
+    "invoice_id": "INV00033",
+    "customer_id": "CUST0038",
+    "days_overdue": 2,
+    "risk_segment": "high",
+    "importance_score": 0.043,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ]
+    ],
+    "original_amount": 52890.46,
+    "remaining_amount": 52890.46,
+    "promise_date": null,
+    "fatigue": 0.3019,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00034": {
+    "invoice_id": "INV00034",
+    "customer_id": "CUST0007",
+    "days_overdue": 1,
+    "risk_segment": "medium",
+    "importance_score": 0.079,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "partial"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "phone_call",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ]
+    ],
+    "original_amount": 749438.06,
+    "remaining_amount": 300390.01,
+    "promise_date": null,
+    "fatigue": 0.16749999999999998,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00035": {
+    "invoice_id": "INV00035",
+    "customer_id": "CUST0016",
+    "days_overdue": 5,
+    "risk_segment": "low",
+    "importance_score": 0.65,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "promise"
+      ]
+    ],
+    "original_amount": 621949.16,
+    "remaining_amount": 0.0,
+    "promise_date": "2026-03-20",
+    "fatigue": 0.0973,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00036": {
+    "invoice_id": "INV00036",
+    "customer_id": "CUST0028",
+    "days_overdue": 16,
+    "risk_segment": "medium",
+    "importance_score": 0.443,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ]
+    ],
+    "original_amount": 702445.2,
+    "remaining_amount": 702445.2,
+    "promise_date": null,
+    "fatigue": 0.5059,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00037": {
+    "invoice_id": "INV00037",
+    "customer_id": "CUST0036",
+    "days_overdue": 9,
+    "risk_segment": "low",
+    "importance_score": 0.086,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "promise"
+      ]
+    ],
+    "original_amount": 589896.69,
+    "remaining_amount": 0.0,
+    "promise_date": "2026-03-14",
+    "fatigue": 0.0736,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00038": {
+    "invoice_id": "INV00038",
+    "customer_id": "CUST0029",
+    "days_overdue": 54,
+    "risk_segment": "medium",
+    "importance_score": 0.134,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "phone_call",
+        "pay"
+      ]
+    ],
+    "original_amount": 239673.53,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.11879999999999999,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00039": {
+    "invoice_id": "INV00039",
+    "customer_id": "CUST0004",
+    "days_overdue": 15,
+    "risk_segment": "medium",
+    "importance_score": 0.096,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "promise"
+      ]
+    ],
+    "original_amount": 385664.51,
+    "remaining_amount": 0.0,
+    "promise_date": "2026-03-12",
+    "fatigue": 0.0212,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00040": {
+    "invoice_id": "INV00040",
+    "customer_id": "CUST0022",
+    "days_overdue": 62,
+    "risk_segment": "high",
+    "importance_score": 0.196,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 781392.5,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0559,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00041": {
+    "invoice_id": "INV00041",
+    "customer_id": "CUST0017",
+    "days_overdue": 7,
+    "risk_segment": "high",
+    "importance_score": 0.094,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ]
+    ],
+    "original_amount": 452497.54,
+    "remaining_amount": 452497.54,
+    "promise_date": null,
+    "fatigue": 0.32789999999999997,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00042": {
+    "invoice_id": "INV00042",
+    "customer_id": "CUST0026",
+    "days_overdue": 2,
+    "risk_segment": "high",
+    "importance_score": 0.68,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 178179.93,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0282,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00043": {
+    "invoice_id": "INV00043",
+    "customer_id": "CUST0032",
+    "days_overdue": 9,
+    "risk_segment": "medium",
+    "importance_score": 0.04,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 368218.95,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0205,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00044": {
+    "invoice_id": "INV00044",
+    "customer_id": "CUST0009",
+    "days_overdue": 9,
+    "risk_segment": "low",
+    "importance_score": 0.834,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "promise"
+      ]
+    ],
+    "original_amount": 283434.86,
+    "remaining_amount": 0.0,
+    "promise_date": "2026-03-09",
+    "fatigue": 0.03,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00045": {
+    "invoice_id": "INV00045",
+    "customer_id": "CUST0006",
+    "days_overdue": 6,
+    "risk_segment": "high",
+    "importance_score": 0.448,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-24",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "promise"
+      ],
+      [
+        "phone_call",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ]
+    ],
+    "original_amount": 462149.93,
+    "remaining_amount": 462149.93,
+    "promise_date": "2026-03-19",
+    "fatigue": 0.20299999999999999,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00046": {
+    "invoice_id": "INV00046",
+    "customer_id": "CUST0002",
+    "days_overdue": 43,
+    "risk_segment": "medium",
+    "importance_score": 0.071,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "promise"
+      ]
+    ],
+    "original_amount": 600484.83,
+    "remaining_amount": 0.0,
+    "promise_date": "2026-03-20",
+    "fatigue": 0.073,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00047": {
+    "invoice_id": "INV00047",
+    "customer_id": "CUST0014",
+    "days_overdue": 7,
+    "risk_segment": "high",
+    "importance_score": 0.084,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 232850.33,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.021,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00048": {
+    "invoice_id": "INV00048",
+    "customer_id": "CUST0024",
+    "days_overdue": 37,
+    "risk_segment": "medium",
+    "importance_score": 0.163,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-20",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "partial"
+      ],
+      [
+        "firm_reminder",
+        "promise"
+      ],
+      [
+        "phone_call",
+        "partial"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ]
+    ],
+    "original_amount": 635394.84,
+    "remaining_amount": 135065.22,
+    "promise_date": "2026-03-15",
+    "fatigue": 0.17569999999999997,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00049": {
+    "invoice_id": "INV00049",
+    "customer_id": "CUST0014",
+    "days_overdue": 24,
+    "risk_segment": "high",
+    "importance_score": 0.084,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "partial"
+      ]
+    ],
+    "original_amount": 521946.49,
+    "remaining_amount": 389394.25,
+    "promise_date": null,
+    "fatigue": 0.3228,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00050": {
+    "invoice_id": "INV00050",
+    "customer_id": "CUST0028",
+    "days_overdue": 5,
+    "risk_segment": "medium",
+    "importance_score": 0.443,
+    "status": "paid",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "promise"
+      ]
+    ],
+    "original_amount": 348781.91,
+    "remaining_amount": 0.0,
+    "promise_date": "2026-03-26",
+    "fatigue": 0.5059,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00051": {
+    "invoice_id": "INV00051",
+    "customer_id": "CUST0031",
+    "days_overdue": 10,
+    "risk_segment": "medium",
+    "importance_score": 0.418,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 745237.23,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0875,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00052": {
+    "invoice_id": "INV00052",
+    "customer_id": "CUST0034",
+    "days_overdue": 14,
+    "risk_segment": "high",
+    "importance_score": 0.099,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 100601.11,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0212,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00053": {
+    "invoice_id": "INV00053",
+    "customer_id": "CUST0010",
+    "days_overdue": 3,
+    "risk_segment": "low",
+    "importance_score": 0.22,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "promise"
+      ]
+    ],
+    "original_amount": 662935.35,
+    "remaining_amount": 0.0,
+    "promise_date": "2026-03-14",
+    "fatigue": 0.07919999999999999,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00054": {
+    "invoice_id": "INV00054",
+    "customer_id": "CUST0030",
+    "days_overdue": 2,
+    "risk_segment": "low",
+    "importance_score": 0.202,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 113636.64,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0785,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00055": {
+    "invoice_id": "INV00055",
+    "customer_id": "CUST0037",
+    "days_overdue": 87,
+    "risk_segment": "high",
+    "importance_score": 0.457,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "phone_call",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ]
+    ],
+    "original_amount": 770511.39,
+    "remaining_amount": 770511.39,
+    "promise_date": null,
+    "fatigue": 0.9,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00056": {
+    "invoice_id": "INV00056",
+    "customer_id": "CUST0017",
+    "days_overdue": 73,
+    "risk_segment": "high",
+    "importance_score": 0.094,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "phone_call",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ]
+    ],
+    "original_amount": 103024.16,
+    "remaining_amount": 103024.16,
+    "promise_date": null,
+    "fatigue": 0.5608,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00057": {
+    "invoice_id": "INV00057",
+    "customer_id": "CUST0005",
+    "days_overdue": 5,
+    "risk_segment": "medium",
+    "importance_score": 0.048,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 219792.28,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.07200000000000001,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00058": {
+    "invoice_id": "INV00058",
+    "customer_id": "CUST0039",
+    "days_overdue": 1,
+    "risk_segment": "low",
+    "importance_score": 0.181,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 233703.87,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0776,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00059": {
+    "invoice_id": "INV00059",
+    "customer_id": "CUST0021",
+    "days_overdue": 42,
+    "risk_segment": "medium",
+    "importance_score": 0.119,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ]
+    ],
+    "original_amount": 199292.96,
+    "remaining_amount": 199292.96,
+    "promise_date": null,
+    "fatigue": 0.3406,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00060": {
+    "invoice_id": "INV00060",
+    "customer_id": "CUST0016",
+    "days_overdue": 1,
+    "risk_segment": "low",
+    "importance_score": 0.65,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 32103.1,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0278,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00061": {
+    "invoice_id": "INV00061",
+    "customer_id": "CUST0032",
+    "days_overdue": 37,
+    "risk_segment": "medium",
+    "importance_score": 0.04,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 216946.06,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0717,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00062": {
+    "invoice_id": "INV00062",
+    "customer_id": "CUST0028",
+    "days_overdue": 27,
+    "risk_segment": "medium",
+    "importance_score": 0.443,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 561220.89,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0253,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00063": {
+    "invoice_id": "INV00063",
+    "customer_id": "CUST0027",
+    "days_overdue": 6,
+    "risk_segment": "low",
+    "importance_score": 0.305,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 640695.41,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0237,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00064": {
+    "invoice_id": "INV00064",
+    "customer_id": "CUST0033",
+    "days_overdue": 2,
+    "risk_segment": "medium",
+    "importance_score": 0.155,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 616197.83,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0766,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00065": {
+    "invoice_id": "INV00065",
+    "customer_id": "CUST0013",
+    "days_overdue": 4,
+    "risk_segment": "medium",
+    "importance_score": 0.035,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "promise"
+      ]
+    ],
+    "original_amount": 713127.09,
+    "remaining_amount": 0.0,
+    "promise_date": "2026-03-11",
+    "fatigue": 0.0204,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00066": {
+    "invoice_id": "INV00066",
+    "customer_id": "CUST0007",
+    "days_overdue": 10,
+    "risk_segment": "medium",
+    "importance_score": 0.079,
+    "status": "paid",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "partial"
+      ],
+      [
+        "escalate_collections",
+        "pay"
+      ]
+    ],
+    "original_amount": 190309.45,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.3202,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00067": {
+    "invoice_id": "INV00067",
+    "customer_id": "CUST0027",
+    "days_overdue": 37,
+    "risk_segment": "medium",
+    "importance_score": 0.305,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 738709.98,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0237,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00068": {
+    "invoice_id": "INV00068",
+    "customer_id": "CUST0004",
+    "days_overdue": 4,
+    "risk_segment": "medium",
+    "importance_score": 0.096,
+    "status": "paid",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "pay"
+      ]
+    ],
+    "original_amount": 55694.83,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.329,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00069": {
+    "invoice_id": "INV00069",
+    "customer_id": "CUST0004",
+    "days_overdue": 74,
+    "risk_segment": "high",
+    "importance_score": 0.096,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 261646.97,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0529,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00070": {
+    "invoice_id": "INV00070",
+    "customer_id": "CUST0008",
+    "days_overdue": 2,
+    "risk_segment": "medium",
+    "importance_score": 0.416,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 160627.07,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0875,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00071": {
+    "invoice_id": "INV00071",
+    "customer_id": "CUST0034",
+    "days_overdue": 12,
+    "risk_segment": "high",
+    "importance_score": 0.099,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-24",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "promise"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "phone_call",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ]
+    ],
+    "original_amount": 584421.19,
+    "remaining_amount": 584421.19,
+    "promise_date": "2026-03-14",
+    "fatigue": 0.1696,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00072": {
+    "invoice_id": "INV00072",
+    "customer_id": "CUST0024",
+    "days_overdue": 6,
+    "risk_segment": "medium",
+    "importance_score": 0.163,
+    "status": "paid",
+    "prior_contact_count": 2,
+    "last_contact_date": "2026-03-06",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "promise"
+      ]
+    ],
+    "original_amount": 76419.98,
+    "remaining_amount": 0.0,
+    "promise_date": "2026-03-20",
+    "fatigue": 0.0769,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00073": {
+    "invoice_id": "INV00073",
+    "customer_id": "CUST0006",
+    "days_overdue": 29,
+    "risk_segment": "high",
+    "importance_score": 0.448,
+    "status": "paid",
+    "prior_contact_count": 1,
+    "last_contact_date": "2026-03-01",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "pay"
+      ]
+    ],
+    "original_amount": 610661.9,
+    "remaining_amount": 0.0,
+    "promise_date": null,
+    "fatigue": 0.0254,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00074": {
+    "invoice_id": "INV00074",
+    "customer_id": "CUST0025",
+    "days_overdue": 40,
+    "risk_segment": "medium",
+    "importance_score": 0.932,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "partial"
+      ]
+    ],
+    "original_amount": 53667.01,
+    "remaining_amount": 28418.88,
+    "promise_date": null,
+    "fatigue": 0.7554000000000001,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  },
+  "INV00075": {
+    "invoice_id": "INV00075",
+    "customer_id": "CUST0031",
+    "days_overdue": 27,
+    "risk_segment": "medium",
+    "importance_score": 0.418,
+    "status": "exhausted",
+    "prior_contact_count": 4,
+    "last_contact_date": "2026-03-16",
+    "action_history": [
+      [
+        "gentle_reminder",
+        "ignore"
+      ],
+      [
+        "firm_reminder",
+        "ignore"
+      ],
+      [
+        "payment_plan_offer",
+        "ignore"
+      ],
+      [
+        "escalate_collections",
+        "ignore"
+      ]
+    ],
+    "original_amount": 268797.71,
+    "remaining_amount": 268797.71,
+    "promise_date": null,
+    "fatigue": 0.4931,
+    "pending_action": null,
+    "pending_reason": null,
+    "pending_since_day": null
+  }
+}
