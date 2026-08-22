@@ -1,0 +1,76 @@
+invoice_id,customer_id,customer_name,industry,invoice_amount,invoice_date,due_date,days_overdue,payment_history_score,risk_segment,prior_contact_count,contact_email,preferred_channel,language_pref,status
+INV00001,CUST0001,Gould-Foster,Manufacturing,71862.49,2025-11-19,2025-12-20,71,0.87,high,0,jonesamanda@aguilar-browning.com,email,English,overdue
+INV00002,CUST0002,Miller Group,Manufacturing,61401.75,2025-12-25,2026-02-06,23,0.511,medium,0,allenandrea@serrano.com,call,English,overdue
+INV00003,CUST0003,"Burton, Meza and Ray",Retail,119542.23,2025-12-11,2026-02-06,23,0.474,medium,0,owilliams@hawkins.com,email,English,overdue
+INV00004,CUST0004,Thomas-Wilson,Construction,574006.95,2026-01-02,2026-02-18,11,0.589,medium,0,ann21@duncan.com,whatsapp,English,overdue
+INV00005,CUST0005,"Brown, Harris and Becker",IT Services,156116.9,2025-12-28,2026-02-21,8,0.543,medium,0,dwaters@mclean.com,email,English,overdue
+INV00006,CUST0006,"Chan, Miller and Evans",Construction,398836.03,2025-12-29,2026-02-26,3,0.113,high,0,ugolden@roberts-baird.com,whatsapp,Hinglish,overdue
+INV00007,CUST0007,"Barnes, Sherman and Hernandez",Textiles,674374.71,2025-12-28,2026-01-29,31,0.518,medium,0,qfisher@duran.com,whatsapp,Hinglish,overdue
+INV00008,CUST0008,Dominguez-Wheeler,Retail,377430.8,2025-12-16,2026-02-14,15,0.736,low,0,fjones@wells-beck.com,call,English,overdue
+INV00009,CUST0009,"Miles, Holland and Kaiser",Healthcare,367612.11,2026-01-18,2026-02-22,7,0.366,medium,0,ymitchell@reed.org,call,English,overdue
+INV00010,CUST0010,Snyder and Sons,Retail,80142.99,2026-01-20,2026-02-23,6,0.87,low,0,david36@rangel-crawford.com,whatsapp,English,overdue
+INV00011,CUST0011,Morales-Ramirez,F&B,459577.86,2026-01-08,2026-02-26,3,0.296,high,0,lorishields@mccarthy-downs.biz,whatsapp,English,overdue
+INV00012,CUST0012,Hernandez and Sons,IT Services,164628.49,2025-12-29,2026-01-29,31,0.606,medium,0,jessehall@guerra-white.com,whatsapp,Hinglish,overdue
+INV00013,CUST0013,Thomas PLC,Textiles,131612.13,2025-12-06,2026-01-17,43,0.5,medium,0,chelsea52@villarreal.com,whatsapp,English,overdue
+INV00014,CUST0014,Lam-Deleon,Manufacturing,283969.13,2026-01-02,2026-02-24,5,0.675,medium,0,zsanders@olson.com,call,English,overdue
+INV00015,CUST0015,Jones and Sons,Construction,219975.43,2025-11-13,2026-01-09,51,0.32,high,0,vmartin@williams.com,call,English,overdue
+INV00016,CUST0016,Austin-Jones,Construction,329537.23,2025-12-22,2026-02-16,13,0.568,medium,0,christinahernandez@moses-guzman.info,whatsapp,Hinglish,overdue
+INV00017,CUST0017,Wilson Group,Manufacturing,95193.36,2026-01-11,2026-02-17,12,0.551,medium,0,tcastillo@thomas.com,whatsapp,Hinglish,overdue
+INV00018,CUST0018,"Baker, Poole and Martin",Retail,533559.74,2025-12-29,2026-02-23,6,0.678,medium,0,harrisstephanie@thomas-daniels.com,whatsapp,Hinglish,overdue
+INV00019,CUST0019,"Evans, Day and Davis",Retail,598531.88,2025-12-31,2026-02-11,18,0.235,high,0,april25@patel.com,call,Hinglish,overdue
+INV00020,CUST0020,"Walker, Cain and Mercer",Construction,445404.16,2026-01-05,2026-02-21,8,0.282,high,0,lindacardenas@pratt.com,whatsapp,English,overdue
+INV00021,CUST0021,Tyler Group,Retail,719697.64,2025-12-01,2026-01-11,49,0.628,medium,0,james95@stokes-sharp.com,call,English,overdue
+INV00022,CUST0022,Miller-Garcia,Textiles,18087.0,2026-01-02,2026-02-20,9,0.51,medium,0,ngonzalez@hanson-mccullough.com,email,Hinglish,overdue
+INV00023,CUST0023,Blankenship-Cooper,Textiles,621224.96,2026-01-28,2026-02-28,1,0.395,medium,0,davenportdavid@casey-christensen.info,whatsapp,Hinglish,overdue
+INV00024,CUST0024,Hamilton Ltd,Healthcare,232590.65,2025-12-30,2026-02-20,9,0.555,medium,0,christopher67@paul-miller.com,call,Hinglish,overdue
+INV00025,CUST0025,Kaiser Inc,Healthcare,110473.23,2026-01-13,2026-02-25,4,0.684,medium,0,brittanymarshall@thomas.com,email,Hinglish,overdue
+INV00026,CUST0026,Dunn and Sons,F&B,127238.51,2025-10-24,2025-12-04,87,0.877,high,0,smithtara@garcia.com,whatsapp,English,overdue
+INV00027,CUST0027,Johnson and Sons,Construction,353744.63,2025-12-28,2026-02-18,11,0.745,low,0,walter95@stephens-flowers.com,email,English,overdue
+INV00028,CUST0028,"Gomez, Ellis and Aguilar",Logistics,421185.58,2025-12-21,2026-01-30,30,0.727,medium,0,gwilcox@schmidt.net,email,English,overdue
+INV00029,CUST0029,Salas and Sons,Textiles,116701.11,2026-01-01,2026-02-24,5,0.745,low,0,parsonsedward@wells.com,call,English,overdue
+INV00030,CUST0030,"Brown, Fleming and Schmidt",Healthcare,717798.89,2026-01-12,2026-02-24,5,0.232,high,0,gmueller@brown.com,email,English,overdue
+INV00031,CUST0031,"Hayes, Johnson and Shannon",Manufacturing,116441.47,2026-01-05,2026-02-23,6,0.816,low,0,ramoscheyenne@obrien.net,email,English,overdue
+INV00032,CUST0032,"Aguirre, Romero and Wright",Healthcare,176609.16,2025-12-01,2026-01-24,36,0.665,medium,0,sandra37@butler.info,email,English,overdue
+INV00033,CUST0033,Jones-Allen,F&B,387687.1,2026-01-02,2026-02-17,12,0.729,low,0,lewiskevin@prince.com,call,English,overdue
+INV00034,CUST0034,King and Sons,F&B,707313.58,2025-12-31,2026-02-25,4,0.604,medium,0,grobinson@dyer-martin.com,email,English,overdue
+INV00035,CUST0035,Mccarthy PLC,Healthcare,777180.04,2025-11-28,2026-01-18,42,0.899,medium,0,mmorgan@flores-bowen.com,whatsapp,English,overdue
+INV00036,CUST0036,Spencer-Alexander,Logistics,42040.68,2026-01-17,2026-02-23,6,0.702,low,0,cruzzachary@hunt-brown.com,email,English,overdue
+INV00037,CUST0037,Miller LLC,Retail,328616.27,2026-01-25,2026-02-28,1,0.404,medium,0,bullockhunter@weiss.com,call,Hinglish,overdue
+INV00038,CUST0038,Hernandez-Calhoun,F&B,271015.78,2025-11-23,2026-01-16,44,0.923,medium,0,fgraves@brown-watts.biz,call,Hinglish,overdue
+INV00039,CUST0039,Adams Inc,Logistics,670426.01,2025-12-23,2026-02-09,20,0.676,medium,0,solischristopher@jones.info,email,English,overdue
+INV00040,CUST0000,Morgan PLC,Textiles,671119.64,2026-01-15,2026-02-26,3,0.511,medium,0,rmcintosh@anderson.com,whatsapp,English,overdue
+INV00041,CUST0001,Green and Sons,Healthcare,532550.1,2026-01-10,2026-02-11,18,0.384,medium,0,sarahfuller@malone.com,email,Hinglish,overdue
+INV00042,CUST0002,Reed-Smith,Logistics,678742.03,2025-12-23,2026-02-06,23,0.378,medium,0,benjamin08@spence.info,email,English,overdue
+INV00043,CUST0003,Barrett Ltd,IT Services,253967.45,2025-10-13,2025-12-04,87,0.875,high,0,idouglas@waller-parker.com,call,English,overdue
+INV00044,CUST0004,Cooper Ltd,IT Services,380729.62,2026-01-08,2026-02-21,8,0.669,medium,0,richardbailey@hood.com,whatsapp,English,overdue
+INV00045,CUST0005,"Yang, Scott and Martin",Healthcare,318675.95,2026-01-04,2026-02-11,18,0.947,low,0,ortegaoscar@lambert.com,whatsapp,English,overdue
+INV00046,CUST0006,Stevens and Sons,Textiles,103451.89,2025-12-19,2026-02-15,14,0.713,low,0,sean45@kaufman-payne.com,whatsapp,English,overdue
+INV00047,CUST0007,Sheppard LLC,Logistics,109913.84,2025-12-22,2026-01-31,29,0.565,medium,0,michaelsmith@miller-ramirez.com,call,English,overdue
+INV00048,CUST0008,Wagner Inc,IT Services,323426.01,2026-01-16,2026-02-17,12,0.622,medium,0,bakerchristopher@willis-long.com,email,Hinglish,overdue
+INV00049,CUST0009,Soto-Miller,Manufacturing,357448.98,2026-01-17,2026-02-24,5,0.287,high,0,dianebaldwin@price.com,call,English,overdue
+INV00050,CUST0010,Ramsey-Day,Healthcare,78252.86,2025-12-23,2026-02-14,15,0.797,low,0,summersjennifer@burton.com,whatsapp,English,overdue
+INV00051,CUST0011,"Mullins, Carroll and Hess",IT Services,202352.04,2025-12-05,2026-01-24,36,0.793,medium,0,mckenziebrandy@vega.com,email,English,overdue
+INV00052,CUST0012,Anderson LLC,IT Services,726413.62,2026-01-03,2026-02-16,13,0.656,medium,0,bennettshannon@burton.net,whatsapp,English,overdue
+INV00053,CUST0013,"Sanchez, Baker and Bryant",Textiles,30764.16,2025-12-28,2026-02-24,5,0.792,low,0,goodmanwesley@davis.info,whatsapp,English,overdue
+INV00054,CUST0014,Lamb-Mathis,Healthcare,509257.12,2025-12-25,2026-02-09,20,0.491,medium,0,jessicaharris@santos.com,email,English,overdue
+INV00055,CUST0015,Lozano-Mitchell,Textiles,15140.27,2025-12-08,2026-01-22,38,0.29,high,0,jensendawn@greene.com,email,Hinglish,overdue
+INV00056,CUST0016,"Paul, Torres and Bradley",IT Services,100478.97,2025-12-20,2026-02-09,20,0.504,medium,0,olsontodd@garcia.net,call,Hinglish,overdue
+INV00057,CUST0017,Marshall-Owens,F&B,737137.29,2026-01-11,2026-02-28,1,0.836,low,0,holderana@spence-mayer.com,call,Hinglish,overdue
+INV00058,CUST0018,Stevens-Wilkins,Construction,472569.41,2025-12-13,2026-02-11,18,0.618,medium,0,ymcknight@rangel.com,call,Hinglish,overdue
+INV00059,CUST0019,"Davis, Burgess and Green",F&B,208940.83,2026-01-09,2026-02-25,4,0.455,medium,0,david84@warner.info,email,English,overdue
+INV00060,CUST0020,Long-Moore,Healthcare,41766.48,2026-01-04,2026-02-18,11,0.365,medium,0,zmaldonado@acosta-butler.biz,call,Hinglish,overdue
+INV00061,CUST0021,Martinez-Rivera,IT Services,616197.83,2026-01-19,2026-02-27,2,0.525,medium,0,karen61@marquez.com,call,English,overdue
+INV00062,CUST0022,Watson-Long,F&B,729660.86,2025-12-04,2026-01-16,44,0.724,medium,0,wardronnie@dickerson-ramirez.com,email,Hinglish,overdue
+INV00063,CUST0023,"Mitchell, Walls and Wright",Textiles,261646.97,2025-10-20,2025-12-17,74,0.532,high,0,ryan53@glover-patterson.com,email,English,overdue
+INV00064,CUST0024,"Ross, Liu and Spencer",Logistics,147869.84,2026-01-04,2026-02-17,12,0.74,low,0,jenniferwilliams@jenkins.com,whatsapp,English,overdue
+INV00065,CUST0025,Williams-Mcintosh,Textiles,568626.34,2026-01-15,2026-02-15,14,0.411,medium,0,georgeperry@evans-stevenson.com,email,Hinglish,overdue
+INV00066,CUST0026,Douglas-Turner,IT Services,309820.61,2025-12-19,2026-01-19,41,0.848,medium,0,pwilson@jones.info,call,English,overdue
+INV00067,CUST0027,"Robinson, Escobar and Davies",IT Services,600953.74,2026-01-17,2026-02-24,5,0.754,low,0,jsimmons@sanchez.com,email,Hinglish,overdue
+INV00068,CUST0028,"Davis, Allen and Green",Retail,212071.75,2025-12-05,2026-01-29,31,0.326,high,0,paigebrady@reyes-reese.com,call,English,overdue
+INV00069,CUST0029,Nelson-Goodwin,IT Services,629065.17,2025-12-22,2026-02-15,14,0.161,high,0,xramirez@mcdaniel.com,call,English,overdue
+INV00070,CUST0030,Nelson and Sons,Textiles,708527.58,2026-01-08,2026-02-20,9,0.275,high,0,cross@finley-allison.com,email,English,overdue
+INV00071,CUST0031,Johnson Ltd,Healthcare,602161.98,2025-10-30,2025-12-06,85,0.902,high,0,fdonaldson@jones.info,whatsapp,English,overdue
+INV00072,CUST0032,Wright-Rodriguez,Logistics,209231.86,2026-01-10,2026-02-23,6,0.52,medium,0,edwinstanton@david.info,call,English,overdue
+INV00073,CUST0033,Arnold Inc,Construction,792900.19,2025-11-25,2026-01-08,52,0.15,high,0,caseyjesse@brewer.com,email,Hinglish,overdue
+INV00074,CUST0034,"King, Fields and Hale",Textiles,778777.67,2026-01-07,2026-02-25,4,0.667,medium,0,garciakevin@lee.com,call,English,overdue
+INV00075,CUST0035,Medina Group,Logistics,482975.45,2025-12-28,2026-02-16,13,0.685,medium,0,susan37@young.com,whatsapp,English,overdue
