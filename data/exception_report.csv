@@ -1,0 +1,24 @@
+invoice_id,customer_id,customer_name,relationship_tier,status,original_amount,remaining_amount,days_overdue_at_invoice_creation,prior_contact_count,reason
+INV00055,CUST0037,Rosario-Hernandez,Standard,exhausted,770511.39,770511.39,87,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00027,CUST0024,Peterson-Bell,New,exhausted,711186.8,711186.8,35,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00036,CUST0028,"Lane, Maldonado and Griffin",Standard,exhausted,702445.2,702445.2,16,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00071,CUST0034,Cole PLC,New,exhausted,584421.19,584421.19,12,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00045,CUST0006,Serrano Inc,Standard,exhausted,462149.93,462149.93,6,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00041,CUST0017,Hale and Sons,New,exhausted,452497.54,452497.54,7,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00032,CUST0019,Golden-Blair,Standard,exhausted,799052.12,423384.12,27,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00009,CUST0040,Baker Inc,VIP,manual_review_denied,417690.25,417690.25,48,3,Escalation to collections was proposed but a human reviewer denied it -- needs a manual decision on next steps.
+INV00004,CUST0031,Brown-Tate,Standard,exhausted,411217.48,411217.48,5,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00021,CUST0040,Baker Inc,VIP,manual_review_denied,396351.47,396351.47,20,3,Escalation to collections was proposed but a human reviewer denied it -- needs a manual decision on next steps.
+INV00049,CUST0014,"Brown, Harris and Becker",New,exhausted,521946.49,389394.25,24,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00024,CUST0020,Lynch-Jones,Standard,exhausted,375292.1,375292.1,2,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00034,CUST0007,Mccoy PLC,New,exhausted,749438.06,300390.01,1,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00075,CUST0031,Brown-Tate,Standard,exhausted,268797.71,268797.71,27,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00012,CUST0015,Waters-Owens,Standard,exhausted,298155.37,214154.66,2,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00059,CUST0021,"Barnes, Sherman and Hernandez",New,exhausted,199292.96,199292.96,42,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00019,CUST0019,Golden-Blair,Standard,exhausted,170657.75,170657.75,85,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00048,CUST0024,Peterson-Bell,New,exhausted,635394.84,135065.22,37,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00056,CUST0017,Hale and Sons,New,exhausted,103024.16,103024.16,73,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00006,CUST0026,Duffy Group,VIP,manual_review_denied,81318.93,81318.93,65,3,Escalation to collections was proposed but a human reviewer denied it -- needs a manual decision on next steps.
+INV00033,CUST0038,Hernandez Ltd,New,exhausted,52890.46,52890.46,2,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00002,CUST0017,Hale and Sons,New,exhausted,42040.68,42040.68,6,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
+INV00074,CUST0025,Riley-Bryant,VIP,exhausted,53667.01,28418.88,40,4,"Reached maximum contact attempts without payment, promise, or resolution -- needs manual outreach."
