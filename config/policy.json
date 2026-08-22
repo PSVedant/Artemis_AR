@@ -1,0 +1,54 @@
+{
+  "_comment": "All policy thresholds live here so the agent's behavior can be tuned and audited without touching code. Each value has a stated justification for defense in review.",
+
+  "cooldown_days": {
+    "value": 5,
+    "justification": "Real B2B dunning cycles typically space contacts 5-7 days apart; contacting more frequently reads as harassment and increases annoyance penalty disproportionately."
+  },
+
+  "max_contact_attempts": {
+    "value": 4,
+    "justification": "Caps runaway auto-escalation. After 4 attempts an invoice moves to 'exhausted' status for manual review instead of continuing to auto-contact indefinitely -- this is the bounded/gated requirement."
+  },
+
+  "min_attempts_before_phone_call": {
+    "value": 1,
+    "justification": "Cannot go straight to a phone call; at least one reminder (gentle or firm) must be attempted first."
+  },
+
+  "min_attempts_before_payment_plan_offer": {
+    "value": 1,
+    "justification": "Payment plan offer is a relationship-preserving escalation and should only follow at least one prior contact showing the invoice remains unresolved."
+  },
+
+  "escalate_collections_gate": {
+    "requires_payment_plan_attempted_first": true,
+    "OR_min_days_overdue": 60,
+    "OR_min_prior_contacts": 2,
+    "justification": "Escalation to collections is the most relationship-damaging action. It is only permitted if a payment plan was already offered and ignored, OR the invoice is severely overdue (60+ days) with at least 2 prior contact attempts already made."
+  },
+
+  "human_approval_required_for": ["escalate_collections"],
+
+  "human_approval_policy": {
+    "auto_approve_if_importance_score_below": 0.3,
+    "always_require_manual_review_if_importance_score_at_or_above": 0.3,
+    "justification": "Low-importance customers can be auto-escalated to keep the pipeline moving. Any customer with importance_score >= 0.3 (Standard tier and above) requires a logged human approval before escalate_collections fires, since relationship damage on valuable customers has outsized business cost."
+  },
+
+  "repeated_ignore_escalation_rule": {
+    "consecutive_ignores_before_forced_tier_jump": 2,
+    "justification": "If the same action-tier fails twice in a row, repeating it a third time is wasted effort and unnecessary annoyance -- the next action must move at least one intensity tier up."
+  },
+
+  "action_intensity_order": [
+    "wait",
+    "gentle_reminder",
+    "firm_reminder",
+    "phone_call",
+    "payment_plan_offer",
+    "escalate_collections"
+  ],
+
+  "stopping_statuses": ["paid", "promised", "written_off", "exhausted"]
+}
