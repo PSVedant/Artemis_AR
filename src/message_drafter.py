@@ -165,12 +165,14 @@ def draft_message(invoice_id, action, language, customer_name, amount, due_date,
                                        reason="GROQ_API_KEY not set")
         try:
             from groq import Groq
-            client = Groq(api_key=api_key)
+            # hard timeout -- if the API is slow/rate-limited, fail fast
+            # instead of hanging for a long, unpredictable time
+            client = Groq(api_key=api_key, timeout=15.0)
             model = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
 
             response = client.chat.completions.create(
                 model=model,
-                max_tokens=300,
+                max_tokens=800,  # generous headroom for reasoning-model overhead
                 messages=[
                     {"role": "system", "content": COMPLIANCE_SYSTEM_PROMPT},
                     {"role": "user", "content": user_prompt},

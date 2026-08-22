@@ -82,7 +82,7 @@ def enrich_audit_trail_with_messages(use_llm=True, pace_seconds=0.0):
 if __name__ == "__main__":
     import os
     provider = os.environ.get("LLM_PROVIDER", "anthropic").lower()
-    pace = 2.1 if provider == "groq" else 0.0  # stay under Groq's ~30 req/min free-tier limit
+    pace = 2.5 if provider == "groq" else 0.0  # stay comfortably under Groq's free-tier rate limit
 
     enriched_trail, states = enrich_audit_trail_with_messages(use_llm=True, pace_seconds=pace)
     df = pd.DataFrame(enriched_trail)
