@@ -1,0 +1,11 @@
+invoice_id,date,action,reason,resolution
+INV00006,2026-03-11,escalate_collections,Escalation gate satisfied. Customer importance_score=0.68 >= threshold -- human approval required before this fires.,auto-approved for simulation
+INV00055,2026-03-11,escalate_collections,Escalation gate satisfied. Customer importance_score=0.457 >= threshold -- human approval required before this fires.,auto-approved for simulation
+INV00006,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.68 >= threshold -- human approval required before this fires.,auto-approved for simulation
+INV00010,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.443 >= threshold -- human approval required before this fires.,auto-approved for simulation
+INV00021,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.96 >= threshold -- human approval required before this fires.,auto-approved for simulation
+INV00036,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.443 >= threshold -- human approval required before this fires.,auto-approved for simulation
+INV00050,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.443 >= threshold -- human approval required before this fires.,auto-approved for simulation
+INV00055,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.457 >= threshold -- human approval required before this fires.,auto-approved for simulation
+INV00074,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.932 >= threshold -- human approval required before this fires.,auto-approved for simulation
+INV00075,2026-03-16,escalate_collections,Escalation gate satisfied. Customer importance_score=0.418 >= threshold -- human approval required before this fires.,auto-approved for simulation

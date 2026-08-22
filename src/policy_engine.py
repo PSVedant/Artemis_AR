@@ -37,6 +37,10 @@ class InvoiceState:
     prior_contact_count: int = 0
     last_contact_date: Optional[date] = None
     action_history: list = field(default_factory=list)  # list of (action, outcome)
+    original_amount: float = 0.0
+    remaining_amount: float = 0.0
+    promise_date: Optional[date] = None
+    fatigue: float = 0.0  # cumulative annoyance, reduces future responsiveness
 
 
 @dataclass
