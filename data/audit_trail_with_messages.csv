@@ -1,0 +1,361 @@
+invoice_id,customer_id,date,action,outcome,remaining_amount_before,amount_recovered,remaining_amount_after,status_after,message_language,message_source,message_fallback_reason,message_text,promise_date
+INV00001,CUST0019,2026-03-01,gentle_reminder,ignore,364972.32,0.0,364972.32,overdue,Hinglish,llm,,"Hi Golden‑Blair team, hope you’re doing well. Just a friendly note that invoice INV00001 of INR 364,972.32 was due on 28‑Feb‑2026 and is currently 1 day overdue. Kindly let us know if you need any assistance or if the payment has already been processed. Thanks!",
+INV00002,CUST0017,2026-03-01,gentle_reminder,ignore,42040.68,0.0,42040.68,overdue,English,llm,,"Dear Hale and Sons,
+
+We hope you are well. Our records show that invoice INV00002 for INR 42,040.68, due on 2026‑02‑23, is currently 6 days overdue. Kindly let us know if you need any assistance processing this payment. Thank you for your attention.",
+INV00003,CUST0020,2026-03-01,gentle_reminder,ignore,314576.89,0.0,314576.89,overdue,Hinglish,llm,,"Namaste Lynch‑Jones team, aapka invoice INV00003 INR 314,576.89 ka due date 25 Feb 2026 tha aur abhi 4 din overdue hai. Shayad koi oversight ho sakti hai; kripya is payment ko jald se jald settle kar dein. Koi bhi sawaal ho toh humein batayein, hum madad karne ke liye yahan hain.",
+INV00004,CUST0031,2026-03-01,gentle_reminder,ignore,411217.48,0.0,411217.48,overdue,Hinglish,llm,,"Namaste Brown‑Tate team, bas aapko yaad dilane ke liye ki INV00004 INR 411,217.48 ka payment 24 Feb 2026 ko due tha aur abhi tak pending hai (5 din overdue). Ho sakta hai aapne overlook kiya ho, kindly check karen aur payment process kar den. Agar koi clarification chahiye ho to humein batayein. Shukriya!",
+INV00005,CUST0001,2026-03-01,gentle_reminder,ignore,475638.57,0.0,475638.57,overdue,English,llm,,"Dear Gould‑Foster team,
+
+I hope you are well. This is a friendly reminder that invoice INV00005 for INR 475,638.57 was due on 27 Feb 2026 and is now 2 days overdue. Please let us know if you need any assistance or if the payment has already been processed. Thank you for your attention.",
+INV00006,CUST0026,2026-03-01,firm_reminder,ignore,81318.93,0.0,81318.93,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Duffy Group, invoice INV00006 (INR 81,318.93) ab 65 din se overdue hai, due date 2025-12-26 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00007,CUST0034,2026-03-01,firm_reminder,ignore,577054.85,0.0,577054.85,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Cole PLC, invoice INV00007 (INR 577,054.85) ab 55 din se overdue hai, due date 2026-01-05 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00008,CUST0039,2026-03-01,firm_reminder,ignore,132328.57,0.0,132328.57,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Smith PLC, invoice INV00008 (INR 132,328.57) ab 66 din se overdue hai, due date 2025-12-25 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00009,CUST0040,2026-03-01,firm_reminder,ignore,417690.25,0.0,417690.25,overdue,English,llm,,"Dear Baker Inc.,  
+
+Our records show that Invoice INV00009 for INR 417,690.25, due on 12 January 2026, is now 48 days overdue. Please arrange payment by 15 February 2026 to bring the account current. If you have any questions or need assistance, feel free to contact us at your earliest convenience.  
+
+Thank you.",
+INV00010,CUST0028,2026-03-01,gentle_reminder,ignore,426149.47,0.0,426149.47,overdue,English,llm,,"Dear Lane, Maldonado and Griffin team,
+
+We hope you’re well. Our records show that invoice INV00010 for INR 426,149.47, due on 2026‑02‑17, is currently 12 days overdue. Could you please check if the payment has been processed? If you need any assistance, feel free to let us know.",
+INV00011,CUST0033,2026-03-01,firm_reminder,pay,641404.24,641404.24,0.0,paid,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Rangel-Crawford, invoice INV00011 (INR 641,404.24) ab 47 din se overdue hai, due date 2026-01-13 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00012,CUST0015,2026-03-01,gentle_reminder,partial,298155.37,84000.71,214154.66,overdue,Hinglish,llm,,"Namaste Waters‑Owens ji, aapka invoice INV00012 INR 298,155.37 ka due date 27 Feb 2026 tha aur abhi 2 din overdue hai. Shayad koi oversight ho gayi hogi—kripya payment process kar dein. Agar aapko koi assistance chahiye, humein bataiye. Dhanyavaad.",
+INV00013,CUST0007,2026-03-01,gentle_reminder,ignore,507797.18,0.0,507797.18,overdue,Hinglish,llm,,"Namaste Mccoy PLC team, aapka invoice INV00013 INR 507,797.18 ka abhi tak settle nahi hua hai. Iska due date 18 January 2026 tha aur abhi 42 din overdue hai. Shayad koi oversight hua ho, kripya payment process kar dein. Koi bhi query ho toh humein batayein. Dhanyavaad!",
+INV00014,CUST0035,2026-03-01,gentle_reminder,ignore,373704.59,0.0,373704.59,overdue,English,llm,,"Dear Ware‑Fuentes team,
+
+We hope you are well. Our records show that invoice INV00014 for INR 373,704.59, due on 2026‑02‑18, is currently 11 days overdue. Could you please confirm the status of the payment at your earliest convenience? If you have already processed it, kindly disregard this note. Thank you.",
+INV00015,CUST0005,2026-03-01,gentle_reminder,pay,532550.1,532550.1,0.0,paid,Hinglish,llm,,"Namaste Davis Group team, aapko yaad dilana tha ki Invoice INV00015, INR 532,550.10 ka due date 15 Jan 2026 thi aur abhi yeh 45 din overdue hai. Shayad koi oversight ho gaya hoga; kindly check kar ke payment process kar dein. Agar koi assistance chahiye ho toh humse zaroor contact karein. Shukriya.",
+INV00016,CUST0005,2026-03-01,gentle_reminder,ignore,73443.25,0.0,73443.25,overdue,Hinglish,llm,,"Hi Davis Group team, hope you’re doing well. Yeh ek friendly reminder hai ki invoice INV00016, amount INR 73,443.25, due date 17‑Feb‑2026 thi aur ab 12 din overdue hai. Kripya check kar ke humein update karein. Dhanyavaad!",
+INV00017,CUST0017,2026-03-01,gentle_reminder,ignore,525196.84,0.0,525196.84,overdue,English,llm,,"Dear Hale and Sons,
+
+We hope you’re well. Our records show that invoice INV00017 for INR 525,196.84, due on 2026‑02‑25, is currently 4 days overdue. Could you please let us know if there’s anything we can assist with to facilitate payment? Thank you for your attention.",
+INV00018,CUST0030,2026-03-01,gentle_reminder,ignore,729716.33,0.0,729716.33,overdue,Hinglish,llm,,"Hi Kelly‑Carr team, hope sab theek hai. Sirf yaad dilane ke liye batana chahta hoon ki invoice INV00018, INR 729,716.33, due 21 Feb 2026, abhi tak 8 din overdue hai. Kripya isko dekh kar payment process kar dein. Agar koi clarification chahiye to please let us know. धन्यवाद.",
+INV00019,CUST0019,2026-03-01,firm_reminder,ignore,170657.75,0.0,170657.75,overdue,Hinglish,llm,,"Namaste Golden‑Blair team, humari record ke hisaab se Invoice INV00019 INR 170",
+INV00020,CUST0039,2026-03-01,firm_reminder,promise,558916.16,0.0,558916.16,promised,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Smith PLC, invoice INV00020 (INR 558,916.16) ab 62 din se overdue hai, due date 2025-12-29 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",2026-03-08
+INV00021,CUST0040,2026-03-01,gentle_reminder,ignore,396351.47,0.0,396351.47,overdue,English,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Hi Baker Inc, hope you're doing well. Just a quick note that invoice INV00021 for INR 396,351.47 was due on 2026-02-09. If you've already paid, please disregard this message. Otherwise, please let us know if you need anything from our side to process this. Thanks!",
+INV00022,CUST0007,2026-03-01,gentle_reminder,pay,571463.67,571463.67,0.0,paid,Hinglish,llm,,"Hi Mccoy PLC team, hope sab theek hai. Sirf yaad dilane ke liye, aapka invoice INV00022 amount INR 571,463.67, due date 7 Feb 2026, abhi 22 din overdue hai. Kripya isko dekh lein; agar koi query ho toh batayein. Dhanyavaad.",
+INV00023,CUST0019,2026-03-01,gentle_reminder,pay,446025.06,446025.06,0.0,paid,Hinglish,llm,,"Namaste Golden‑Blair team, hope sab theek hai. Sirf yaad dilana tha ki invoice INV00023, INR 446,025.06, jo 21 Feb 2026 ko due thi, abhi tak receive nahi hui hai aur 8 din overdue hai. Shayad koi oversight hua hoga – kindly check kar ke payment arrange kar dein. Koi bhi query ho to hume zaroor bataye.",
+INV00024,CUST0020,2026-03-01,gentle_reminder,ignore,375292.1,0.0,375292.1,overdue,Hinglish,llm,,"Hi Lynch‑Jones team,
+
+Bas ek friendly reminder – aapka invoice INV00024 INR 375,292.10 ka, jo 27 Feb 2026 ko due tha, ab 2 din overdue hai. Shayad koi oversight ho gaya ho, isliye kindly check karke payment process kar dein. Agar koi clarification chahiye ho to humein bataiye, hum help karne ke liye ready hain. धन्यवाद!",
+INV00025,CUST0033,2026-03-01,gentle_reminder,ignore,757286.01,0.0,757286.01,overdue,Hinglish,llm,,"Namaste Rangel‑Crawford team, aapka INV00025 invoice INR 757,286.01 ka due date 21 Feb 2026 tha aur abhi 8 din overdue hai. Shayad koi oversight hua hoga, kripya is payment ko process kar dein. Agar koi query ho toh humein bata",
+INV00026,CUST0014,2026-03-01,gentle_reminder,ignore,426391.58,0.0,426391.58,overdue,Hinglish,llm,,"Namaste Brown, Harris and Becker team, aapka INV00026 invoice INR 426,391.58 ka, jo 27 Feb 2026 ko due tha, ab",
+INV00027,CUST0024,2026-03-01,gentle_reminder,ignore,711186.8,0.0,711186.8,overdue,Hinglish,llm,,"Namaste Peterson‑Bell team, hope sab theek hai. Sirf yaad दिलाने के लिए बताना चाहूँगा कि Invoice INV00027 ₹ 711,186.80 ka due date 25 Jan 2026 tha, aur abhi 35 din overdue hai. Shayad koi oversight hua ho, kindly check करके payment process कर दें. Agar koi assistance चाहिए हो तो please let us know.",
+INV00028,CUST0024,2026-03-01,gentle_reminder,ignore,139866.24,0.0,139866.24,overdue,Hinglish,llm,,"Namaste Peterson‑Bell team, hope sab theek hai. Sirf yaad dilane ke liye batana chahta/chahti hoon ki aapka invoice INV00028, INR 139,866.24, jo 29 Jan 2026 ko due tha, abhi 31 din overdue hai. Kripya isko dekh lein; koi dikkat ho toh humein batayein",
+INV00029,CUST0032,2026-03-01,gentle_reminder,promise,125455.17,0.0,125455.17,promised,English,llm,,"Dear Rodgers Group,
+
+We hope you are well. Our records show that Invoice INV00029 for INR 125,455.17, due on 2026‑02‑18, is currently 11 days overdue. Kindly let us know if you need any assistance or if the payment has already been processed.
+
+Thank you for your attention.",2026-03-11
+INV00030,CUST0023,2026-03-01,gentle_reminder,ignore,269769.86,0.0,269769.86,overdue,English,llm,,"Dear Duran PLC,
+
+We hope you’re well. This is a friendly reminder that invoice INV00030 for INR 269,769.86 was due on 2026‑02‑22 and is now 7 days overdue. If you’ve already processed the payment, please disregard this note; otherwise, we would appreciate your attention at your earliest convenience.",
+INV00031,CUST0022,2026-03-01,gentle_reminder,ignore,24201.47,0.0,24201.47,overdue,Hinglish,llm,,"Namaste Fisher‑Hayden team, bas yaad dilane ke liye ki aapka invoice INV00031 INR 24,201.47 ka, jo 15 Feb 2026 ko due tha, abhi 14 din overdue hai. Shayad koi oversight ho gaya hoga; aapke convenience ke liye aap payment process kar sakte hain. Agar koi clarification chahiye ho to please hume bataye.",
+INV00032,CUST0019,2026-03-01,gentle_reminder,ignore,799052.12,0.0,799052.12,overdue,Hinglish,llm,,"Hi Golden‑Blair team, hope sab theek hai. Sirf yaad dilane ke liye, aapka invoice INV00032 INR 799,052.12 ka due 2 Feb 2026 tha aur ab 27 din overdue hai. Shayd koi oversight hua hoga, kindly check kar lein. Agar koi sawaal ho to please let us know.",
+INV00033,CUST0038,2026-03-01,gentle_reminder,ignore,52890.46,0.0,52890.46,overdue,Hinglish,llm,,"Namaste Hernandez Ltd, humare records ke mutabik aapka invoice INV00033 INR 52,890.46, due 27 Feb 2026, abhi 2 din overdue hai. Shayad koi oversight hua hoga—kripya is payment ko process kar den. Koi bhi madad chahiye ho toh humein zarur bataye.",
+INV00034,CUST0007,2026-03-01,gentle_reminder,partial,749438.06,449048.05,300390.01,overdue,Hinglish,llm,,"Namaste Mccoy PLC team,
+
+Umeed hai aap sab theek hain. Hamari records ke mutabik Invoice INV00034 INR 749,438.06 ka due date 28‑Feb‑2026 tha, aur ab yeh 1 din overdue hai. Kripya is payment ko process karne mein madad karein; koi clarification ho toh zarur batayein.",
+INV00035,CUST0016,2026-03-01,gentle_reminder,ignore,621949.16,0.0,621949.16,overdue,Hinglish,llm,,"Hi Ward‑Wright team, hope sab theek hai. Hamara record dikhata hai ki INV00035 (INR 621,949.16) ka invoice 24 Feb 2026 ko due tha aur abhi 5 din overdue hai. Shayad koi oversight hua ho, kindly payment process kar den. Agar koi query ho to please hume bataen. Shukriya!",
+INV00036,CUST0028,2026-03-01,gentle_reminder,ignore,702445.2,0.0,702445.2,overdue,English,llm,,"Dear Lane, Maldonado and Griffin team,
+
+We hope you are well. Our records show that invoice INV00036 for INR 702,445.20, due on 13 February 2026, is currently 16 days overdue. Please let us know if you need any assistance or if the payment has already been processed.",
+INV00037,CUST0036,2026-03-01,gentle_reminder,ignore,589896.69,0.0,589896.69,overdue,English,llm,,"Dear Ramirez, Perry and Howard team,
+
+We hope you’re well. This is a friendly reminder that invoice INV00037 for INR 589,896.69 was due on 20 February 2026 and is currently 9 days overdue. Please let us know if you need any assistance or if the payment has already been processed. Thank you.",
+INV00038,CUST0029,2026-03-01,firm_reminder,ignore,239673.53,0.0,239673.53,overdue,English,llm,,"Dear Cruz, Barnett and Johnson,
+
+Our records indicate that Invoice INV00038 for INR 239,673.53, due on 2026‑01‑06, is now 54 days overdue. Please arrange full payment by",
+INV00039,CUST0004,2026-03-01,gentle_reminder,promise,385664.51,0.0,385664.51,promised,English,llm,,"Hope you’re doing well. This is a friendly reminder that invoice INV00039 for INR 385,664.51 was due on 2026‑02‑14 and is now 15 days overdue. Please let us know if you need any assistance processing the payment. Thank you for your attention.",2026-03-12
+INV00040,CUST0022,2026-03-01,firm_reminder,pay,781392.5,781392.5,0.0,paid,Hinglish,llm,,"Dear Fisher‑Hayden,
+
+Aapka invoice INV00040, INR 781,392.50, jo 29 Dec 2025 ko due tha, ab 62 din overdue hai. Kripya is amount ko agle 5 business days ke andar settle kar dein. Agar koi query ho to humein turant inform karein.",
+INV00041,CUST0017,2026-03-01,gentle_reminder,ignore,452497.54,0.0,452497.54,overdue,English,llm,,"Dear Hale and Sons,
+
+We hope you’re well. This is a friendly reminder that invoice INV00041 for INR 452,497.54 was due on 2026‑02‑22 and is now 7 days overdue. Please let us know if you have any questions or need any assistance with the payment. Thank you.",
+INV00042,CUST0026,2026-03-01,gentle_reminder,pay,178179.93,178179.93,0.0,paid,Hinglish,llm,,Namaste,
+INV00043,CUST0032,2026-03-01,gentle_reminder,pay,368218.95,368218.95,0.0,paid,English,llm,,"Dear Rodgers Group,
+
+Our records show that invoice INV00043 for INR 368,218.95 was due on 2026‑02‑20 and is currently 9 days overdue. Could you please confirm if the payment has been processed, or let us know if there’s anything we can assist with?
+
+Thank you for your attention.",
+INV00044,CUST0009,2026-03-01,gentle_reminder,promise,283434.86,0.0,283434.86,promised,English,llm,,"Dear Cherry Inc Team,
+
+I hope you’re well. I’m writing regarding invoice INV00044 for INR 283,434.86, which was due on 2026‑02‑20 and is now 9 days overdue. Could you kindly confirm when the payment might be processed? Please let us know if you need any assistance.",2026-03-09
+INV00045,CUST0006,2026-03-01,gentle_reminder,ignore,462149.93,0.0,462149.93,overdue,Hinglish,llm,,"Namaste Serrano Inc team, aapka invoice INV00045, INR 462,149.93 ka, jo 23 Feb 2026 ko due tha, abhi 6 din overdue hai. Yeh sirf ek friendly reminder hai – shayad koi oversight ho gaya ho. Kripya jab convenient ho, payment process kar dein",
+INV00046,CUST0002,2026-03-01,gentle_reminder,ignore,600484.83,0.0,600484.83,overdue,Hinglish,llm,,"Namaste Jones PLC team, aapka invoice INV00046 INR 600,484.83 ka 17 Jan 2026 ko due tha aur abhi 43 din overdue hai. Shayad koi oversight ho gaya hoga – kripya is payment ko process kar den. Agar aapko koi madad chahiye ho toh humein zarur bataye.",
+INV00047,CUST0014,2026-03-01,gentle_reminder,pay,232850.33,232850.33,0.0,paid,Hinglish,llm,,"Namaste Brown, Harris and Becker team, aapko yaad dilana tha ki INV00047 ke liye INR 232,850.33 ka payment due date 22 Feb 2026 thi, aur abhi 7 din overdue hai. Shayad koi oversight ho gaya hoga—kripya jab aapko suvidha ho, is payment ko settle kar dein. Agar a",
+INV00048,CUST0024,2026-03-01,gentle_reminder,partial,635394.84,361282.44,274112.4,overdue,Hinglish,llm,,"Namaste Peterson‑Bell team, hope sab theek hai. Sirf yaad दिलाने ke liye, invoice INV00048 ki amount INR 635,394.84 due thi 23 Jan 2026, aur abhi 37 din overdue hai. Ho sakta hai koi oversight ho, kindly payment process kar dein. Aapke response ka intezar rahega. Shukriya.",
+INV00049,CUST0014,2026-03-01,gentle_reminder,ignore,521946.49,0.0,521946.49,overdue,Hinglish,llm,,"Namaste Brown, Harris and Becker team, hope sab theek hai. Sirf yaad dilaane ke liye batana tha ki invoice INV00049 INR 521,946.49 ka due date 5 Feb 2026 tha, ab tak 24 din overdue hai. Shayad koi oversight hua hoga; kindly isko settle kar den. Aapki help ke liye dhanyavaad.",
+INV00050,CUST0028,2026-03-01,gentle_reminder,ignore,348781.91,0.0,348781.91,overdue,English,llm,,"Dear Lane, Maldonado and Griffin team,
+
+We hope you’re doing well. Our records show that invoice INV00050 for INR 348,781.91 was due on 2026‑02‑24 and is currently 5 days overdue. Could you please confirm if the payment has been processed? If you need any assistance, feel free to let us know.
+
+Thank you.",
+INV00051,CUST0031,2026-03-01,gentle_reminder,ignore,745237.23,0.0,745237.23,overdue,Hinglish,llm,,"Namaste Brown‑Tate team, aasha hai sab theek hai. Yeh ek friendly reminder hai ki invoice INV00051, INR 745,237.23, jo 19 Feb 2026 ko due tha, ab 10 din overdue hai. Agar payment already process mein hai ya koi assistance chahiye, toh humein batayein. Shukriya!",
+INV00052,CUST0034,2026-03-01,gentle_reminder,pay,100601.11,100601.11,0.0,paid,Hinglish,llm,,"Namaste Cole PLC team, hope sab theek hai. Humne notice kiya hai ki invoice INV00052, amount INR 100,601.11, jo 15 Feb 2026 ko due thi, abhi tak clear nahi hui (14 din overdue). Shayad koi oversight hua hoga; kindly isko dekh kar payment process kar dein. Agar koi doubt ya assistance chahiye ho, please hume batayein.",
+INV00053,CUST0010,2026-03-01,gentle_reminder,ignore,662935.35,0.0,662935.35,overdue,English,llm,,"Subject: Friendly Reminder – Invoice INV00053
+
+Dear Garrison, Roberts and Thomas,
+
+We hope you’re well. This is a gentle reminder that invoice INV00053 for INR 662,935.35, due on 26 February 2026, is now 3 days overdue. Please let us know if you need any assistance or if the payment has already been processed. Thank you for your attention to this matter.",
+INV00054,CUST0030,2026-03-01,gentle_reminder,ignore,113636.64,0.0,113636.64,overdue,Hinglish,llm,,"Hi Kelly‑Carr team,
+
+Hope sab theek hai. Sirf yaad dila rahe hain ki aapka invoice INV00054, amount INR 113,636",
+INV00055,CUST0037,2026-03-01,firm_reminder,ignore,770511.39,0.0,770511.39,overdue,English,llm,,"Dear Rosario‑Hernandez,
+
+Our records show that invoice INV00055 for INR 770,511.39, due on 2025‑12‑04, is now 87 days overdue. Please arrange payment by 2025‑12‑18 to avoid further follow‑up. If you have already submitted payment, kindly disregard this notice. Should you have any questions or need assistance, please let us know.",
+INV00056,CUST0017,2026-03-01,firm_reminder,ignore,103024.16,0.0,103024.16,overdue,English,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Hale and Sons, invoice INV00056 for INR 103,024.16 is now 73 days past its due date of 2025-12-18. Please arrange payment at your earliest convenience, or reach out if there's an issue we can help resolve. We'd appreciate a response by end of week.",
+INV00057,CUST0005,2026-03-01,gentle_reminder,ignore,219792.28,0.0,219792.28,overdue,Hinglish,llm,,"Namaste Davis Group team, hope sab theek hai. Hamare records ke mutabik invoice **INV00057** INR **219,792.28** ka payment **24 Feb 2026** ko due tha, aur ab",
+INV00058,CUST0039,2026-03-01,gentle_reminder,ignore,233703.87,0.0,233703.87,overdue,Hinglish,llm,,"Namaste Smith PLC team, aapka INV00058 invoice INR 233,703.87 ka due date 28 Feb 2026 tha, jo abhi 1 din overdue hai. Shayad koi oversight ho gayi hogi, kripya is payment ko dekh lein. Aapke cooperation ke liye dhanyavaad",
+INV00059,CUST0021,2026-03-01,gentle_reminder,ignore,199292.96,0.0,199292.96,overdue,English,llm,,"Dear Barnes, Sherman and Hernandez team,
+
+I hope you’re doing well. We wanted to let you know that Invoice INV00059 for INR 199,292.96, due on 2026‑01‑18, is currently 42 days overdue. Could you please confirm if the payment has been processed or let us know if there’s anything we can assist with?",
+INV00060,CUST0016,2026-03-01,gentle_reminder,pay,32103.1,32103.1,0.0,paid,Hinglish,llm,,"Namaste Ward‑Wright team, hope sab theek hai. Hamari taraf se aapko INV00060 ke liye reminder bhej rahe hain – amount INR",
+INV00061,CUST0032,2026-03-01,gentle_reminder,ignore,216946.06,0.0,216946.06,overdue,English,llm,,"Dear Rodgers Group, I hope you are well. This is a friendly reminder that invoice INV00061 for INR 216,946.06 was due on 2026‑01‑23 and is currently 37 days overdue. Please let us know if you need any assistance or if the payment has already been processed. We appreciate your attention to this matter and thank you for your continued partnership.",
+INV00062,CUST0028,2026-03-01,gentle_reminder,pay,561220.89,561220.89,0.0,paid,English,llm,,"Dear Lane, Maldonado and Griffin,
+
+We hope you are well. Our records show that invoice INV00062 for INR 561,220.89, due on 2026‑02‑02, is currently 27 days overdue. Please let us know if you need any assistance or if the payment has already been processed.
+
+Thank you for your attention.",
+INV00063,CUST0027,2026-03-01,gentle_reminder,pay,640695.41,640695.41,0.0,paid,English,llm,,"Dear Beck, Brown and Miles team,
+
+We hope you are well. Our records show that Invoice INV00063 for INR 640,695.41, which was due on 23",
+INV00064,CUST0033,2026-03-01,gentle_reminder,ignore,616197.83,0.0,616197.83,overdue,Hinglish,llm,,"Namaste Rangel‑Crawford team, aapka invoice INV00064 INR 616,197.83 ka due date 27 Feb 2026 tha. Yeh invoice abhi 2 din overdue hai. Kripya isko review karke payment process kar dein. Agar koi clarification chahiye ho toh humse contact kar sakte hain.",
+INV00065,CUST0013,2026-03-01,gentle_reminder,promise,713127.09,0.0,713127.09,promised,English,llm,,"Dear Davis-Joseph,
+
+We hope you are well. This is a friendly reminder that invoice INV00065 for INR 713,127.09 was due on 2026‑02‑25 and is now 4 days overdue. Please let us know if you have any questions or need assistance with the payment. Thank you.",2026-03-11
+INV00066,CUST0007,2026-03-01,gentle_reminder,ignore,190309.45,0.0,190309.45,overdue,Hinglish,llm,,"Namaste Mccoy PLC team, hum aapko yaad dilana chahte hain ki invoice INV00066, INR 190,309.45 ka payment 19 Feb 2026 ko due tha. Abhi tak 10 din overdue hai, shayad aap overlook kar gaye honge. Kripya is par nazar daal kar payment process kar den. Dhanyavaad!",
+INV00067,CUST0027,2026-03-01,gentle_reminder,pay,738709.98,738709.98,0.0,paid,English,llm,,"Dear Beck, Brown and Miles team,
+
+I hope you are well. This is a friendly reminder that invoice INV00067 for INR 738,709.98 was due on 2026‑01‑23 and is now 37 days overdue. Please let us know if you need any assistance or if the payment has already been processed. Thank you.",
+INV00068,CUST0004,2026-03-01,gentle_reminder,ignore,55694.83,0.0,55694.83,overdue,English,llm,,"Dear Lewis, Miller and Barnes team,
+
+We hope you are well. This is a friendly reminder that invoice INV00068 for INR 55,694.83 was due on 2026‑02‑25 and is currently 4 days overdue. Please let us know if you need any assistance or if the payment has already been processed. Thank you for your attention.",
+INV00069,CUST0004,2026-03-01,firm_reminder,pay,261646.97,261646.97,0.0,paid,English,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Lewis, Miller and Barnes, invoice INV00069 for INR 261,646.97 is now 74 days past its due date of 2025-12-17. Please arrange payment at your earliest convenience, or reach out if there's an issue we can help resolve. We'd appreciate a response by end of week.",
+INV00070,CUST0008,2026-03-01,gentle_reminder,ignore,160627.07,0.0,160627.07,overdue,Hinglish,llm,,"Namaste Ray Group, humare records ke mutabik INV00070 INR 160,627.07 ka payment 27 Feb 2026 ko due tha aur abhi 2 din overdue hai. Shayad koi oversight ho gaya hoga, kripya is par dhyan dein. Agar aapko koi clarification ya assistance chahiye, humein zaroor bataye.",
+INV00071,CUST0034,2026-03-01,gentle_reminder,promise,584421.19,0.0,584421.19,promised,Hinglish,llm,,"Namaste Cole PLC team, humne notice kiya hai ki invoice INV00071, amount INR 584,421.19, jo 17 Feb 2026 ko due tha, abhi 12 din overdue hai. Shayad koi oversight ho gaya ho. Kripya jab aapke liye convenient ho, payment process kar dein. Agar koi query ho toh please humein bataye.",2026-03-14
+INV00072,CUST0024,2026-03-01,gentle_reminder,ignore,76419.98,0.0,76419.98,overdue,Hinglish,llm,,"Namaste Peterson‑Bell team, hope sab theek hai. Sirf yaad dilane ke liye, aapka invoice INV00072 INR 76,419.98 ka due 23 Feb 2026 tha aur ab 6 din overdue hai. Kripya isko dekh lein, koi dikkat ho to bataiye. Shukriya.",
+INV00073,CUST0006,2026-03-01,gentle_reminder,pay,610661.9,610661.9,0.0,paid,Hinglish,llm,,"Namaste Serrano Inc team, hope sab theek hai. Hamare records ke mutabik Invoice INV00073, INR 610,661.90, jo 31 Jan 2026 ko due tha, abhi tak settle nahi hua hai aur ab 29 din overdue hai. Shayad koi oversight ho gayi ho –",
+INV00074,CUST0025,2026-03-01,gentle_reminder,ignore,53667.01,0.0,53667.01,overdue,Hinglish,llm,,"Namaste Riley‑Bryant, aapka INV00074 invoice INR 53,667.01 ka, jo 20 Jan 2026 ko due tha, abhi 40 din overdue hai. Shayad koi oversight ho gayi hogi; kripya jab aapko suvidha ho, payment process kar dein. Agar aapko",
+INV00075,CUST0031,2026-03-01,gentle_reminder,ignore,268797.71,0.0,268797.71,overdue,Hinglish,llm,,"Namaste Brown‑Tate team, hope sab theek hai. Yeh aapka invoice INV00075 hai, amount INR 268,797.71, jo 2 February 2026 ko due tha aur abhi 27 din overdue hai. Shayad koi oversight ho gaya hoga; kripya isko dekh lein. Aapko koi bhi madad chahiye ho toh please bataiye.",
+INV00001,CUST0019,2026-03-06,firm_reminder,ignore,364972.32,0.0,364972.32,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Golden-Blair, invoice INV00001 (INR 364,972.32) ab 1 din se overdue hai, due date 2026-02-28 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00002,CUST0017,2026-03-06,firm_reminder,ignore,42040.68,0.0,42040.68,overdue,English,llm,,"Dear Hale and Sons,  
+
+We note that invoice INV00002 for INR 42,040.68 was due on 2026‑02‑23 and is now 6 days overdue. Please arrange payment at your earliest convenience, preferably by 2026‑03‑05. If you have already processed the payment, kindly disregard this reminder. For any questions, feel free to contact us directly.",
+INV00003,CUST0020,2026-03-06,firm_reminder,pay,314576.89,314576.89,0.0,paid,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Lynch-Jones, invoice INV00003 (INR 314,576.89) ab 4 din se overdue hai, due date 2026-02-25 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00004,CUST0031,2026-03-06,firm_reminder,promise,411217.48,0.0,411217.48,promised,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Brown-Tate, invoice INV00004 (INR 411,217.48) ab 5 din se overdue hai, due date 2026-02-24 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",2026-03-14
+INV00005,CUST0001,2026-03-06,firm_reminder,pay,475638.57,475638.57,0.0,paid,English,llm,,"Dear Gould-Foster,
+
+Our records show that invoice INV00005 for INR 475,638.57, due on 2026‑02‑27, is now 2 days overdue. Please arrange payment at your earliest convenience to avoid further delays. If you have already processed the payment, kindly disregard this notice and let us know the transaction details.",
+INV00006,CUST0026,2026-03-06,phone_call,ignore,81318.93,0.0,81318.93,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"[Call script] Duffy Group ko warmly greet karein. Invoice INV00006, INR 81,318.93, 65 din overdue ka reference dein. Poochein ki delay ki koi wajah hai kya. Agar dispute ya cash-flow issue hai to sunein. Zaroorat ho to payment plan discuss karne ki offer karein. Call khatam karne se pehle ek specific date confirm karein.",
+INV00007,CUST0034,2026-03-06,phone_call,ignore,577054.85,0.0,577054.85,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"[Call script] Cole PLC ko warmly greet karein. Invoice INV00007, INR 577,054.85, 55 din overdue ka reference dein. Poochein ki delay ki koi wajah hai kya. Agar dispute ya cash-flow issue hai to sunein. Zaroorat ho to payment plan discuss karne ki offer karein. Call khatam karne se pehle ek specific date confirm karein.",
+INV00008,CUST0039,2026-03-06,phone_call,pay,132328.57,132328.57,0.0,paid,Hinglish,llm,,"Hello, main [Your Name] XYZ Ltd. se bol raha hoon. Aapke Smith PLC ka invoice INV00008, INR 132,328.57, jo 25 Dec 2025 ko due tha, abhi 66 din overdue hai. Kya aap payment ke status ya koi issue ke baare mein discuss kar sakte hain? Agar koi clarification ya assistance chahiye ho, please bataye",
+INV00009,CUST0040,2026-03-06,phone_call,ignore,417690.25,0.0,417690.25,overdue,English,llm,,"Hello, this is [Your Name] from the Accounts Receivable team. I'm calling about invoice INV00009 for INR 417,690.25, which was due on 2026‑01‑12 and is now 48 days overdue. Could you let us know if there are any issues with the payment or if we can assist you in any way?",
+INV00010,CUST0028,2026-03-06,firm_reminder,ignore,426149.47,0.0,426149.47,overdue,English,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Lane, Maldonado and Griffin, invoice INV00010 for INR 426,149.47 is now 12 days past its due date of 2026-02-17. Please arrange payment at your earliest convenience, or reach out if there's an issue we can help resolve. We'd appreciate a response by end of week.",
+INV00012,CUST0015,2026-03-06,firm_reminder,ignore,214154.66,0.0,214154.66,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Waters-Owens, invoice INV00012 (INR 214,154.66) ab 2 din se overdue hai, due date 2026-02-27 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00013,CUST0007,2026-03-06,firm_reminder,pay,507797.18,507797.18,0.0,paid,Hinglish,llm,,"Dear Mccoy PLC,
+
+Hum aapko yaad dilana chahte hain ki invoice INV00013, INR 507,797.18, jo 18 Jan 2026 ko due tha, abhi tak unpaid hai aur 42 din overdue hai. Kripya is payment ko aaj se 5 business days ke andar settle kar dein. Agar aapko koi issue ya clarification chahiye to humse turant sampark kare",
+INV00014,CUST0035,2026-03-06,firm_reminder,pay,373704.59,373704.59,0.0,paid,English,llm,,"Invoice INV00014 for INR 373,704.59 was due on 2026‑02‑18 and is now 11 days overdue. Please arrange payment by 2026‑02‑28 to avoid further delay. If you have already submitted the payment, kindly disregard this reminder. Should you have any questions or need assistance, feel free to contact us.",
+INV00016,CUST0005,2026-03-06,firm_reminder,ignore,73443.25,0.0,73443.25,overdue,Hinglish,llm,,Nam,
+INV00017,CUST0017,2026-03-06,firm_reminder,pay,525196.84,525196.84,0.0,paid,English,llm,,"Dear Hale and Sons,
+
+Our records show that Invoice INV00017 for INR 525,196.84, due on 2026‑02‑25, is now 4 days overdue. Please arrange payment no later",
+INV00018,CUST0030,2026-03-06,firm_reminder,promise,729716.33,0.0,729716.33,promised,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Kelly-Carr, invoice INV00018 (INR 729,716.33) ab 8 din se overdue hai, due date 2026-02-21 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",2026-03-20
+INV00019,CUST0019,2026-03-06,phone_call,ignore,170657.75,0.0,170657.75,overdue,Hinglish,llm,,"Namaste, main XYZ Accounts Receivable team se Rahul bol raha hoon. Sir/Madam, aapka INV00019 invoice INR 170,657.75 ka tha, jo 6 December 2025 ko due tha aur abhi 85 din overdue hai. Kya aapke end se koi issue ya clarification hai jise hum discuss kar sakte hain? Main aapki convenience ke hisaab se payment arrange",
+INV00021,CUST0040,2026-03-06,firm_reminder,ignore,396351.47,0.0,396351.47,overdue,English,llm,,"Dear Baker Inc.,  
+
+This is a reminder that invoice INV00021 for INR 396,351.47 was due on 2026‑02‑09 and is now 20 days overdue. Please arrange payment by 2026‑03‑05 to keep your account current. If you have already made the payment, kindly disregard this notice. Thank you for your prompt attention.",
+INV00024,CUST0020,2026-03-06,firm_reminder,ignore,375292.1,0.0,375292.1,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Lynch-Jones, invoice INV00024 (INR 375,292.10) ab 2 din se overdue hai, due date 2026-02-27 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00025,CUST0033,2026-03-06,firm_reminder,pay,757286.01,757286.01,0.0,paid,Hinglish,llm,,"Namaste Rangel‑Crawford, aapke invoice INV00025 ke liye payment ab tak receive nahi hua hai.  
+Invoice",
+INV00026,CUST0014,2026-03-06,firm_reminder,ignore,426391.58,0.0,426391.58,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Brown, Harris and Becker, invoice INV00026 (INR 426,391.58) ab 2 din se overdue hai, due date 2026-02-27 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00027,CUST0024,2026-03-06,firm_reminder,ignore,711186.8,0.0,711186.8,overdue,Hinglish,llm,,"Namaste Peterson‑Bell team,
+
+Hamari records ke mut",
+INV00028,CUST0024,2026-03-06,firm_reminder,promise,139866.24,0.0,139866.24,promised,Hinglish,llm,,"Dear Peterson‑Bell, aapka invoice INV00028 INR 139,866.24 ka 29 Jan 2026 ko due tha aur abhi 31 din overdue hai. Kripya payment ko agle 5 business days ke andar settle kar dein. Agar koi issue ya assistance chahiye, humein zaroor bat",2026-03-16
+INV00030,CUST0023,2026-03-06,firm_reminder,ignore,269769.86,0.0,269769.86,overdue,English,llm,,"Dear Duran PLC,
+
+This is a reminder that invoice INV00030 for INR 269,769.86 was due on 2026‑02‑22 and is now 7 days overdue. Please arrange payment by 2026‑03‑05 to keep your account current. If you have already remitted the amount, kindly disregard this notice. Thank you",
+INV00031,CUST0022,2026-03-06,firm_reminder,promise,24201.47,0.0,24201.47,promised,Hinglish,llm,,Namaste Fisher,2026-03-16
+INV00032,CUST0019,2026-03-06,firm_reminder,partial,799052.12,375668.0,423384.12,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Golden-Blair, invoice INV00032 (INR 799,052.12) ab 27 din se overdue hai, due date 2026-02-02 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00033,CUST0038,2026-03-06,firm_reminder,ignore,52890.46,0.0,52890.46,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Hernandez Ltd, invoice INV00033 (INR 52,890.46) ab 2 din se overdue hai, due date 2026-02-27 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00034,CUST0007,2026-03-06,firm_reminder,ignore,300390.01,0.0,300390.01,overdue,Hinglish,llm,,"Namaste Mccoy PLC,  
+
+Kripya INV00034 invoice ka INR 300,390.01 amount 2026",
+INV00035,CUST0016,2026-03-06,firm_reminder,promise,621949.16,0.0,621949.16,promised,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Ward-Wright, invoice INV00035 (INR 621,949.16) ab 5 din se overdue hai, due date 2026-02-24 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",2026-03-20
+INV00036,CUST0028,2026-03-06,firm_reminder,ignore,702445.2,0.0,702445.2,overdue,English,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Lane, Maldonado and Griffin, invoice INV00036 for INR 702,445.20 is now 16 days past its due date of 2026-02-13. Please arrange payment at your earliest convenience, or reach out if there's an issue we can help resolve. We'd appreciate a response by end of week.",
+INV00037,CUST0036,2026-03-06,firm_reminder,promise,589896.69,0.0,589896.69,promised,English,llm,,"Dear Ramirez, Perry and Howard,
+
+This is a reminder that invoice INV00037 for INR 589,896.69 was due on 2026‑02‑20 and is now 9 days overdue. Please arrange payment by 2026‑03‑",2026-03-14
+INV00038,CUST0029,2026-03-06,phone_call,pay,239673.53,239673.53,0.0,paid,English,llm,,"Hello, this is [Your Name] from the accounts receivable team. I’m calling Cruz, Barnett and Johnson about invoice INV00038 for INR 239,673.53, which was due on 2026‑01‑06 and is now 54 days overdue. Could you",
+INV00041,CUST0017,2026-03-06,firm_reminder,ignore,452497.54,0.0,452497.54,overdue,English,llm,,"Dear Hale and Sons, this is a reminder that invoice INV00041 for INR 452,497.54, due on 2026‑02‑22, is now 7 days overdue. Please arrange payment at your earliest convenience, preferably by 2026‑03‑01. If you have already submitted payment, kindly disregard this notice. Should you have any questions, feel free to contact us.",
+INV00045,CUST0006,2026-03-06,firm_reminder,promise,462149.93,0.0,462149.93,promised,Hinglish,llm,,"Namaste Serrano Inc team, hamare records ke mutabik INV00045 ke liye INR 462,149.93 ka payment abhi tak receive nahi",2026-03-19
+INV00046,CUST0002,2026-03-06,firm_reminder,promise,600484.83,0.0,600484.83,promised,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Jones PLC, invoice INV00046 (INR 600,484.83) ab 43 din se overdue hai, due date 2026-01-17 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",2026-03-20
+INV00048,CUST0024,2026-03-06,firm_reminder,promise,274112.4,0.0,274112.4,promised,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Peterson-Bell, invoice INV00048 (INR 274,112.40) ab 37 din se overdue hai, due date 2026-01-23 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",2026-03-15
+INV00049,CUST0014,2026-03-06,firm_reminder,ignore,521946.49,0.0,521946.49,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Brown, Harris and Becker, invoice INV00049 (INR 521,946.49) ab 24 din se overdue hai, due date 2026-02-05 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00050,CUST0028,2026-03-06,firm_reminder,ignore,348781.91,0.0,348781.91,overdue,English,llm,,"Dear Lane, Maldonado and Griffin,",
+INV00051,CUST0031,2026-03-06,firm_reminder,pay,745237.23,745237.23,0.0,paid,Hinglish,llm,,"Dear Brown‑Tate team, hum aapko yaad dilana chahte hain ki Invoice INV00051, INR 745,237.23, jo 19 Feb 2026 ko due thi, abhi 10 din overdue ho chuki hai. Kripya is payment ko agle 3",
+INV00053,CUST0010,2026-03-06,firm_reminder,promise,662935.35,0.0,662935.35,promised,English,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Garrison, Roberts and Thomas, invoice INV00053 for INR 662,935.35 is now 3 days past its due date of 2026-02-26. Please arrange payment at your earliest convenience, or reach out if there's an issue we can help resolve. We'd appreciate a response by end of week.",2026-03-14
+INV00054,CUST0030,2026-03-06,firm_reminder,pay,113636.64,113636.64,0.0,paid,Hinglish,llm,,"Dear Kelly‑Carr team,
+
+हम आपके INV00054 invoice की बात कर रहे हैं, जिसकी",
+INV00055,CUST0037,2026-03-06,phone_call,ignore,770511.39,0.0,770511.39,overdue,English,llm,,"Hello, this is [Your Name] from [Company] calling about invoice INV00055 for INR 770,511.39, which was due on December 4, 2025 and is now 87 days overdue. We wanted to confirm you received the invoice and see if there’s anything we can help with to settle the balance. Please let us know the current status or any issues you’re encountering",
+INV00056,CUST0017,2026-03-06,phone_call,ignore,103024.16,0.0,103024.16,overdue,English,llm,,"Hello, this is [Your Name] from the Accounts Receivable team at [Company]. I'm calling about invoice INV00056 for INR 103,024.16, which was due on December 18 2025 and is now 73 days overdue. Could you let me know if there are any issues with the payment or if you need any assistance from our side? We're happy to work with you to resolve this at your earliest convenience.",
+INV00057,CUST0005,2026-03-06,firm_reminder,pay,219792.28,219792.28,0.0,paid,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Davis Group, invoice INV00057 (INR 219,792.28) ab 5 din se overdue hai, due date 2026-02-24 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00058,CUST0039,2026-03-06,firm_reminder,pay,233703.87,233703.87,0.0,paid,Hinglish,llm,,Dear,
+INV00059,CUST0021,2026-03-06,firm_reminder,ignore,199292.96,0.0,199292.96,overdue,English,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Barnes, Sherman and Hernandez, invoice INV00059 for INR 199,292.96 is now 42 days past its due date of 2026-01-18. Please arrange payment at your earliest convenience, or reach out if there's an issue we can help resolve. We'd appreciate a response by end of week.",
+INV00061,CUST0032,2026-03-06,firm_reminder,pay,216946.06,216946.06,0.0,paid,English,llm,,"Dear Rodgers Group,
+
+Our records show that Invoice INV00061 for INR 216,946.06, due on 2026‑01‑23, is now 37 days overdue. Please arrange payment promptly, preferably by 2026‑09‑05. If you have already settled this invoice, kindly disregard this notice and share the payment details with us. Should you need any assistance, feel",
+INV00064,CUST0033,2026-03-06,firm_reminder,pay,616197.83,616197.83,0.0,paid,Hinglish,llm,,"Namaste Rangel‑Crawford team, aapke invoice INV00064 ke liye INR 616",
+INV00066,CUST0007,2026-03-06,firm_reminder,ignore,190309.45,0.0,190309.45,overdue,Hinglish,llm,,"Namaste Mccoy PLC, yeh yaad dilane ke liye ki Invoice INV00066, INR 190,309.45 ka payment 19‑",
+INV00068,CUST0004,2026-03-06,firm_reminder,ignore,55694.83,0.0,55694.83,overdue,English,llm,,"Invoice INV00068 for INR 55,694.83 was due on 2026‑02‑25 and is now 4 days overdue. We kindly request that you arrange payment promptly to avoid further delays. Please remit the outstanding amount by 2026‑03‑05. If you have any questions or need assistance, feel free to contact us.",
+INV00070,CUST0008,2026-03-06,firm_reminder,pay,160627.07,160627.07,0.0,paid,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Ray Group, invoice INV00070 (INR 160,627.07) ab 2 din se overdue hai, due date 2026-02-27 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00072,CUST0024,2026-03-06,firm_reminder,promise,76419.98,0.0,76419.98,promised,Hinglish,llm,,"Namaste Peterson‑Bell team,
+
+Aapka INV00072 invoice, INR 76,419.98, due on 23‑Feb‑2026, abhi 6 din overdue hai. Kripya is payment ko agle 3",2026-03-20
+INV00074,CUST0025,2026-03-06,firm_reminder,ignore,53667.01,0.0,53667.01,overdue,Hinglish,llm,,"Dear Riley‑Bryant,
+
+Aapka invoice INV00074, INR 53,667.01,",
+INV00075,CUST0031,2026-03-06,firm_reminder,ignore,268797.71,0.0,268797.71,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Brown-Tate, invoice INV00075 (INR 268,797.71) ab 27 din se overdue hai, due date 2026-02-02 thi. Please jaldi payment arrange karein, ya agar koi issue hai to hamein batayein, hum help kar sakte hain. Is week ke andar response ki ummeed rahegi.",
+INV00020,CUST0039,2026-03-08,promise_resolution,promise_kept,,558916.16,,paid,,,,,
+INV00044,CUST0009,2026-03-09,promise_resolution,promise_kept,,283434.86,,paid,,,,,
+INV00029,CUST0032,2026-03-11,promise_resolution,promise_kept,,125455.17,,paid,,,,,
+INV00065,CUST0013,2026-03-11,promise_resolution,promise_kept,,713127.09,,paid,,,,,
+INV00001,CUST0019,2026-03-11,payment_plan_offer,pay,364972.32,364972.32,0.0,paid,Hinglish,llm,,"Dear Golden‑Blair team, aapke INV00001 invoice ke liye INR 364,972.32 due tha 28‑Feb‑2026 aur aaj se 1 din overdue hai. Hum samajhte hain ki cash‑flow tight ho sak",
+INV00002,CUST0017,2026-03-11,payment_plan_offer,ignore,42040.68,0.0,42040.68,overdue,English,llm,,"Dear Hale and Sons, we note that invoice INV00002 for INR 42,040.68, originally due on 2026‑02‑23, is now 6 days overdue. To make the payment easier, we can set up a flexible installment plan that fits your cash‑flow needs. Please let us know a schedule that works for you, or feel free to contact us to discuss options. We look forward to resolving this together.",
+INV00006,CUST0026,2026-03-11,escalate_collections,ignore,81318.93,0.0,81318.93,overdue,Hinglish,llm,,"Namaste Duffy Group, humein aapko yaad dilana hai ki invoice INV00006 INR 81,318.93 ka, jo 26 Dec 2025 ko due tha, ab 65 din overdue hai. Kripya jald se jald payment process karein. Agar ab tak payment receive nahi hoti",
+INV00007,CUST0034,2026-03-11,payment_plan_offer,ignore,577054.85,0.0,577054.85,overdue,Hinglish,llm,,"Namaste Cole PLC, humne notice kiya hai ki aapka INV00007 INR 577,054.85 ka invoice, jo 5 Jan 2026 ko due tha, ab 55 din overdue hai. Hum aapko ek flexible payment plan offer karna chahte hain— aap monthly installments ya custom schedule ke through payment kar sakte hain",
+INV00009,CUST0040,2026-03-11,payment_plan_offer,pay,417690.25,417690.25,0.0,paid,English,llm,,"Dear Baker Inc.,
+
+We note that invoice INV00009 for INR 417,690.25 was due on 2026‑01‑12 and is now 48 days overdue. To help you settle this balance, we’re happy to discuss a flexible payment plan that fits your cash‑flow needs. Please let us know a convenient time to review the options, or feel free to propose a schedule that works for you. We look forward to working together to resolve this promptly.",
+INV00010,CUST0028,2026-03-11,payment_plan_offer,ignore,426149.47,0.0,426149.47,overdue,English,llm,,"Dear Lane, Maldonado and Griffin, we noticed that invoice INV00010 for INR 426,149.47, due on 2026‑02‑17, is now 12 days overdue. To help you settle the balance, we can arrange a payment plan tailored to your cash‑flow needs. Please let us know a schedule that works for you, or feel free to contact us with any questions. We appreciate your prompt attention and look forward to working together.",
+INV00012,CUST0015,2026-03-11,phone_call,ignore,214154.66,0.0,214154.66,overdue,Hinglish,llm,,"Namaste, main XYZ Company se Rahul bol raha hoon. Aapke Waters‑Owens account ke liye INV00012, INR 214,154.66 ka invoice 27 Feb 2026 ko due tha aur aaj 2 din overdue hai. Kya aap please batayenge ki payment ka status kya hai ya koi issue hua? Agar aapko koi assistance",
+INV00016,CUST0005,2026-03-11,payment_plan_offer,ignore,73443.25,0.0,73443.25,overdue,Hinglish,llm,,"Namaste Davis Group, aapka invoice INV00016 INR 73,443",
+INV00019,CUST0019,2026-03-11,escalate_collections,ignore,170657.75,0.0,170657.75,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Golden-Blair, pichle reminders ke bawajood, invoice INV00019 (INR 170,657.75) abhi tak unpaid hai, 85 din overdue. Agar 7 din ke andar payment ya satisfactory response nahi milta, to yeh account collections process mein bhej diya jayega. Hum abhi bhi directly isse resolve karna prefer karenge.",
+INV00021,CUST0040,2026-03-11,payment_plan_offer,ignore,396351.47,0.0,396351.47,overdue,English,llm,,"Dear Baker Inc.,  
+
+Our records show that Invoice INV00021 for INR 396,351.47, due on 2026‑02‑09, is now 20 days overdue. We understand that cash‑flow needs can vary, so we’d like to offer a flexible payment plan that can be tailored to your schedule. Please let us know a convenient installment amount and frequency, and we’ll work together to finalize the arrangement.  
+
+Thank you for your attention to this matter.",
+INV00024,CUST0020,2026-03-11,payment_plan_offer,pay,375292.1,375292.1,0.0,paid,Hinglish,llm,,"Namaste Lynch‑Jones team, humne dekha hai ki invoice INV00024 INR 375,292.10 ka due date 27‑Feb‑2026 thi aur ab 2 din overdue hai. Agar aapko payment mein dikkat ho rahi ho, hum flexible payment plan discuss karne ke liye ready hain. Aap monthly installments",
+INV00026,CUST0014,2026-03-11,payment_plan_offer,ignore,426391.58,0.0,426391.58,overdue,Hinglish,llm,,"Dear Brown, Harris and Becker team,  
+
+Invoice INV00026 ke liye INR 426,391.58 ka amount tha jo 27 Feb 2026 ko due tha aur ab 2 din overdue hai.  
+
+Hum aapko ek flexible payment plan offer karna chahenge – aap apne convenience ke hisaab se monthly installments ya koi aur schedule suggest kar sakte hain.  
+
+Aapke suvidha ke liye hum y",
+INV00027,CUST0024,2026-03-11,payment_plan_offer,ignore,711186.8,0.0,711186.8,overdue,Hinglish,llm,,"Dear Peterson‑Bell, hum notice kar rahe hain ki aapka invoice INV00027 INR 711,186.80 due 2026‑01‑25 ab 35 din overdue ho gaya hai. Hum aapko ek flexible payment plan offer karna chahte hain jisse aapka outstanding balance comfortably clear ho sake. Krip",
+INV00030,CUST0023,2026-03-11,payment_plan_offer,ignore,269769.86,0.0,269769.86,overdue,English,llm,,"Dear Duran PLC,
+
+We note that invoice INV00030 for INR 269,769.86 was due on 2026‑02‑22 and is now 7 days overdue. To help you settle this balance, we are happy to discuss a flexible payment plan that fits your cash‑flow needs. Please let us know a convenient time to arrange the details, or feel free to propose a schedule that works for you. We look forward to resolving this together.",
+INV00032,CUST0019,2026-03-11,phone_call,ignore,423384.12,0.0,423384.12,overdue,Hinglish,llm,,"Hello, main XYZ Solutions ka [Your Name] bol raha/rahi hoon, Golden‑Blair se baat karna chahta/chahti hoon. Humne aapko invoice INV00032 ke liye INR 423,384.12 ka reminder send kiya tha, jo 2 Feb 2026 ko due tha aur abhi 27 din overdue hai. Kya aap mujhe batayenge ki koi payment issue ya clarification chahiye? Aapke convenience ke hisaab se hum payment schedule ya koi assistance discuss kar sakte hain. धन्यवाद.",
+INV00033,CUST0038,2026-03-11,payment_plan_offer,ignore,52890.46,0.0,52890.46,overdue,Hinglish,llm,,"Dear Hernandez Ltd, humne notice kiya hai ki Invoice INV00033 INR 52,890.46 due 27‑Feb‑2026 ab 2 din overdue hai. Agar payment mein difficulty ho rahi ho, hum flexible payment plan offer karte hain – aap monthly installments ya customized schedule choose",
+INV00034,CUST0007,2026-03-11,phone_call,ignore,300390.01,0.0,300390.01,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"[Call script] Mccoy PLC ko warmly greet karein. Invoice INV00034, INR 300,390.01, 1 din overdue ka reference dein. Poochein ki delay ki koi wajah hai kya. Agar dispute ya cash-flow issue hai to sunein. Zaroorat ho to payment plan discuss karne ki offer karein. Call khatam karne se pehle ek specific date confirm karein.",
+INV00036,CUST0028,2026-03-11,payment_plan_offer,ignore,702445.2,0.0,702445.2,overdue,English,llm,,"Dear Lane, Maldonado and Griffin,
+
+We note that invoice INV00036 for INR 702,445.20 was due on 2026‑02‑13 and is now 16 days overdue. To assist you, we can set up a flexible payment plan that spreads the outstanding amount over a period that suits your cash flow, with no additional fees. Please let us know a schedule that works for you, or contact us to discuss the options",
+INV00041,CUST0017,2026-03-11,payment_plan_offer,ignore,452497.54,0.0,452497.54,overdue,English,llm,,"Dear Hale and Sons, we note that invoice INV00041 for INR 452,497.54 was due on 2026‑02‑22 and is 7 days overdue. To help you clear the balance, we’re happy to offer a flexible payment‑plan option. Please let us know a schedule that works for you, or feel free to discuss alternative arrangements with us. Thank you for your prompt attention.",
+INV00049,CUST0014,2026-03-11,payment_plan_offer,ignore,521946.49,0.0,521946.49,overdue,Hinglish,llm,,"नमस्ते Brown, Harris and Becker टीम, हम देख रहे हैं कि INV00049 की राशि INR 521,946.49 5 Feb 2026 को due थी और अब 24 days overdue है। हम समझते हैं कि कभी‑कभी cash‑flow में दिक्कत हो सकती है, इसलिए हम एक flexible",
+INV00050,CUST0028,2026-03-11,payment_plan_offer,ignore,348781.91,0.0,348781.91,overdue,English,llm,,"Dear Lane, Maldonado and Griffin, we note that invoice INV00050 for INR 348,781.91 was due on 2026‑02‑24 and is now 5",
+INV00055,CUST0037,2026-03-11,escalate_collections,ignore,770511.39,0.0,770511.39,overdue,English,llm,,"Dear Rosario-Hernandez,
+
+Our records show that Invoice INV00055 for INR 770,511.39, due on 2025‑12‑04, is now 87 days overdue. As this matter remains unresolved, the account will be referred to our collections process. Please arrange payment promptly to avoid any further steps. If you have already made the payment, kindly disregard this notice.",
+INV00056,CUST0017,2026-03-11,escalate_collections,ignore,103024.16,0.0,103024.16,overdue,English,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Hale and Sons, despite previous reminders, invoice INV00056 (INR 103,024.16) remains unpaid, now 73 days overdue. If payment or a satisfactory response is not received within 7 days, this account will be referred to our collections process. We would still welcome the opportunity to resolve this directly before that becomes necessary.",
+INV00059,CUST0021,2026-03-11,payment_plan_offer,ignore,199292.96,0.0,199292.96,overdue,English,llm,,"Invoice INV00059 for INR 199,292.96 was due on 2026‑01‑18 and is now 42 days overdue. We understand that cash flow can vary, and we’d like to work with you to set up a convenient payment plan. Please let us know a schedule that suits your business, and we will do our best to accommodate it. Feel free to reply to this email or call us directly to discuss the options.",
+INV00066,CUST0007,2026-03-11,payment_plan_offer,ignore,190309.45,0.0,190309.45,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Mccoy PLC, hum samajhte hain cash flow kabhi tight ho sakta hai. Invoice INV00066 (INR 190,309.45, 10 din overdue) ke liye, hum installments mein payment plan bhi arrange kar sakte hain agar wo help kare. Please batayein kaunsa schedule aapke liye theek rahega.",
+INV00068,CUST0004,2026-03-11,payment_plan_offer,ignore,55694.83,0.0,55694.83,overdue,English,llm,,"Dear Lewis, Miller and Barnes team, we note that invoice INV00068 for INR 55,694.83 was due on 2026‑02‑25 and is now 4 days overdue. To make settlement easier, we can arrange a flexible payment plan that fits your cash‑flow schedule. Please let us know a convenient installment amount and frequency, or feel free to propose an alternative arrangement. We look forward to working together to resolve this promptly.",
+INV00074,CUST0025,2026-03-11,payment_plan_offer,ignore,53667.01,0.0,53667.01,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Riley-Bryant, hum samajhte hain cash flow kabhi tight ho sakta hai. Invoice INV00074 (INR 53,667.01, 40 din overdue) ke liye, hum installments mein payment plan bhi arrange kar sakte hain agar wo help kare. Please batayein kaunsa schedule aapke liye theek rahega.",
+INV00075,CUST0031,2026-03-11,payment_plan_offer,partial,268797.71,122017.39,146780.32,overdue,Hinglish,llm,,"Namaste Brown‑Tate team, aapka invoice INV00075 INR 268,797.71 due 02‑Feb‑2026 abhi 27 din overdue hai.  
+Hum samajhte hain ki",
+INV00039,CUST0004,2026-03-12,promise_resolution,promise_kept,,385664.51,,paid,,,,,
+INV00004,CUST0031,2026-03-14,promise_resolution,promise_kept,,411217.48,,paid,,,,,
+INV00037,CUST0036,2026-03-14,promise_resolution,promise_kept,,589896.69,,paid,,,,,
+INV00053,CUST0010,2026-03-14,promise_resolution,promise_broken,,0.0,,overdue,,,,,
+INV00071,CUST0034,2026-03-14,promise_resolution,promise_broken,,0.0,,overdue,,,,,
+INV00053,CUST0010,2026-03-14,phone_call,ignore,662935.35,0.0,662935.35,overdue,English,llm,,"Hello, this is [Your Name] from the accounts receivable team. I'm calling about invoice INV00053 for INR 662,935.35, which was due on 2026‑02‑26 and is now 3 days overdue. Could you let us know if there’s any issue with the payment or if we can assist you in any way? We appreciate your prompt attention to this matter.",
+INV00071,CUST0034,2026-03-14,firm_reminder,ignore,584421.19,0.0,584421.19,overdue,Hinglish,llm,,"Dear Cole PLC, hamara invoice INV00071 INR 584,421.19 ka due date 17 Feb 2026 tha aur abhi 12 din overdue hai. Kripya payment ko agle 5 business days ke andar clear kar dein. Agar koi issue ho to humein turant",
+INV00048,CUST0024,2026-03-15,promise_resolution,promise_broken,,0.0,,overdue,,,,,
+INV00048,CUST0024,2026-03-15,phone_call,ignore,274112.4,0.0,274112.4,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"[Call script] Peterson-Bell ko warmly greet karein. Invoice INV00048, INR 274,112.40, 37 din overdue ka reference dein. Poochein ki delay ki koi wajah hai kya. Agar dispute ya cash-flow issue hai to sunein. Zaroorat ho to payment plan discuss karne ki offer karein. Call khatam karne se pehle ek specific date confirm karein.",
+INV00028,CUST0024,2026-03-16,promise_resolution,promise_kept,,139866.24,,paid,,,,,
+INV00031,CUST0022,2026-03-16,promise_resolution,promise_broken,,0.0,,overdue,,,,,
+INV00002,CUST0017,2026-03-16,escalate_collections,pay,42040.68,42040.68,0.0,paid,English,llm,,"Dear Hale and Sons,
+
+Our records show that Invoice INV00002 for INR 42,040.68, due on 2026‑02‑23, is now 6 days overdue. As the amount remains unpaid, the account will be referred to our collections process. Please arrange payment promptly to avoid further processing.",
+INV00006,CUST0026,2026-03-16,escalate_collections,ignore,81318.93,0.0,81318.93,overdue,Hinglish,llm,,"Namaste Duffy Group, hum aapko yaad dilana chahte hain ki Invoice INV00006, INR 81,",
+INV00007,CUST0034,2026-03-16,escalate_collections,pay,577054.85,577054.85,0.0,paid,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Cole PLC, pichle reminders ke bawajood, invoice INV00007 (INR 577,054.85) abhi tak unpaid hai, 55 din overdue. Agar 7 din ke andar payment ya satisfactory response nahi milta, to yeh account collections process mein bhej diya jayega. Hum abhi bhi directly isse resolve karna prefer karenge.",
+INV00010,CUST0028,2026-03-16,escalate_collections,ignore,426149.47,0.0,426149.47,overdue,English,llm,,"Dear Lane, Maldonado and Griffin,
+
+Our records show that invoice INV00010 for INR 426,149.47, due on 2026‑02‑17, is now 12 days overdue. Please arrange payment as soon as possible. If we do not receive payment within the next 5 business days, the account will be referred to our collections process. Should you have any questions, feel free to contact us.",
+INV00012,CUST0015,2026-03-16,payment_plan_offer,ignore,214154.66,0.0,214154.66,overdue,Hinglish,llm,,"Namaste Waters‑Owens team, humne dekha ki invoice INV00012, INR 214,154.66, 27 Feb 2026 ko due",
+INV00016,CUST0005,2026-03-16,escalate_collections,pay,73443.25,73443.25,0.0,paid,Hinglish,llm,,"Dear Davis Group, humein aapka",
+INV00019,CUST0019,2026-03-16,escalate_collections,ignore,170657.75,0.0,170657.75,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Golden-Blair, pichle reminders ke bawajood, invoice INV00019 (INR 170,657.75) abhi tak unpaid hai, 85 din overdue. Agar 7 din ke andar payment ya satisfactory response nahi milta, to yeh account collections process mein bhej diya jayega. Hum abhi bhi directly isse resolve karna prefer karenge.",
+INV00021,CUST0040,2026-03-16,escalate_collections,ignore,396351.47,0.0,396351.47,overdue,English,llm,,"Dear Baker Inc., our records show that invoice INV00021 for INR 396,351.47, due on 2026‑02‑09, is now 20 days overdue. Please arrange payment as soon as possible. If payment is not received, the account will be referred to our collections process. Should you have any questions or need assistance, please contact us at your earliest convenience.",
+INV00026,CUST0014,2026-03-16,escalate_collections,ignore,426391.58,0.0,426391.58,overdue,Hinglish,llm,,"नमस्ते Brown, Harris and Becker टीम,
+
+हम आपको याद दिलाना चाहते हैं कि Invoice INV00026, INR 426,391.58, जो 27‑Feb‑2026 को due था, अब 2 दिन overdue है। कृपया आज के भीतर भुगतान करें; यदि आज तक प्राप्त नहीं हुआ, तो आपका अकाउंट हमारे collections process को रेफर किया जाएगा।
+
+धन्यवाद",
+INV00027,CUST0024,2026-03-16,escalate_collections,ignore,711186.8,0.0,711186.8,overdue,Hinglish,llm,,"Namaste Peterson‑Bell, aapke invoice INV00027 ka INR 711,186.80 ka amount 25 January 2026 ko due tha aur ab 35 din overdue ho chuka hai.  
+
+Hum aapko inform karna chahte hain ki aapka account hamare collections process mein refer kiya jaayega.  
+
+Krip",
+INV00030,CUST0023,2026-03-16,escalate_collections,pay,269769.86,269769.86,0.0,paid,English,llm,,"Invoice INV00030 for INR 269,769.86 was due on 2026‑02‑22 and is now 7 days overdue. We have not yet received payment for this invoice. Accordingly, the account will be referred to our collections process. Please contact our accounts team at collections@yourcompany.com if you wish to discuss this matter.",
+INV00031,CUST0022,2026-03-16,phone_call,pay,24201.47,24201.47,0.0,paid,Hinglish,llm,,"Namaste, main XYZ Company se Rahul bol raha hoon, Fisher‑Hayden ke liye. Hamare records ke mutabik aapka INV00031, INR 24,201.47 ka invoice 15 Feb 2026 ko due tha aur abhi 14 din overdue hai. Kya",
+INV00032,CUST0019,2026-03-16,payment_plan_offer,ignore,423384.12,0.0,423384.12,overdue,Hinglish,llm,,"Namaste Golden‑Blair team, hum aapko yaad dilana chahte hain ki invoice INV00032 INR 423,384.12 ka, jo 2 Feb 2026 ko due tha, abhi 27 din overdue hai. Agar aapko ek flexible payment plan",
+INV00033,CUST0038,2026-03-16,escalate_collections,ignore,52890.46,0.0,52890.46,overdue,Hinglish,llm,,"Dear Hernandez Ltd,
+
+Invoice INV00033 amounting to INR 52,890.46 was due on 27‑Feb‑2026 and is now 2 days overdue. कृपया यथाशीघ्र भुगतान करें; otherwise, the account will be referred to our collections process. यदि आपको कोई समस्या या भुगतान में सहायता चाहिए तो कृपया तुरंत हमसे संपर्क करें.",
+INV00034,CUST0007,2026-03-16,payment_plan_offer,pay,300390.01,300390.01,0.0,paid,Hinglish,llm,,"Namaste Mccoy PLC team,  
+
+Aapke INV00034 invoice (INR 300,390.01) ka due date 28‑Feb‑2026 tha aur abhi 1 din overdue hai.  
+
+Hum aapke liye ek flexible payment plan taiyar kar sakte hain – aap chaahe to monthly installments ya koi customized schedule choose kar sakte hain.  
+
+Kripya iske baare mein discuss karne ke liye humein call ya email karein, hum aapke convenience ke hisaab se solution finalize",
+INV00036,CUST0028,2026-03-16,escalate_collections,pay,702445.2,702445.2,0.0,paid,English,llm,,"Subject: Notice of Referral to Collections – Invoice INV00036
+
+Dear Lane, Maldonado and Griffin,
+
+We note that invoice INV00036 for INR 702,445.20, due on 2026‑02‑13, is now 16 days overdue. As this payment remains outstanding, the account will be referred to our collections process. Please arrange payment promptly to avoid further processing. If you have already submitted payment, kindly disregard this notice and inform us of the transaction details.",
+INV00041,CUST0017,2026-03-16,escalate_collections,ignore,452497.54,0.0,452497.54,overdue,English,llm,,"Dear Hale and Sons,
+
+Our records show that invoice INV00041 for INR 452,497.54, due on 2026‑02‑22, is now 7 days overdue. Please arrange payment promptly to avoid further action. If we do not receive payment within 5 business days, the account will be referred to our collections process. We appreciate your immediate attention to this matter.",
+INV00049,CUST0014,2026-03-16,escalate_collections,ignore,521946.49,0.0,521946.49,overdue,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Brown, Harris and Becker, pichle reminders ke bawajood, invoice INV00049 (INR 521,946.49) abhi tak unpaid hai, 24 din overdue. Agar 7 din ke andar payment ya satisfactory response nahi milta, to yeh account collections process mein bhej diya jayega. Hum abhi bhi directly isse resolve karna prefer karenge.",
+INV00050,CUST0028,2026-03-16,escalate_collections,promise,348781.91,0.0,348781.91,promised,English,llm,,"Dear Lane, Maldonado and Griffin,
+
+Our records indicate that Invoice INV00050 for INR 348,781.91 was due on 2026‑02‑24 and is now 5 days overdue. As the payment has not been received, the account will be referred to our collections process. Please arrange payment at your earliest convenience to resolve this matter.",2026-03-26
+INV00055,CUST0037,2026-03-16,escalate_collections,ignore,770511.39,0.0,770511.39,overdue,English,llm,,"Invoice INV00055 for INR 770,511.39 was due on 2025‑12‑04 and is now 87 days overdue. Please be advised that, as this payment remains outstanding, the account will be referred to our collections process. We remain available to discuss any questions you may have regarding this invoice. Your prompt attention to this matter is appreciated.",
+INV00056,CUST0017,2026-03-16,escalate_collections,ignore,103024.16,0.0,103024.16,overdue,English,llm,,"Dear Hale and Sons,
+
+Our records indicate that invoice INV00056 for INR 103,024.16, due on 2025‑12‑18, is now 73 days overdue. As the payment remains outstanding, the account will be referred to our collections process. Please arrange payment at your earliest convenience to resolve this matter.",
+INV00059,CUST0021,2026-03-16,escalate_collections,pay,199292.96,199292.96,0.0,paid,English,llm,,"Dear Barnes, Sherman and Hernandez,
+
+Our records indicate that invoice INV00059 for INR 199,292.96, due on 2026‑01‑18, is now 42 days overdue. Please arrange payment as soon as possible",
+INV00066,CUST0007,2026-03-16,escalate_collections,partial,190309.45,101262.89,89046.56,overdue,Hinglish,llm,,"Dear Mccoy PLC,
+
+Invoice INV00066 amounting to INR 190,309.45 was due on 19‑Feb‑2026 and is now 10 days overdue. As per our policy, the account will be referred to our collections process. कृपया जल्द से जल्द payment settle कर दें ताकि आगे की कोई प्रक्रिया शुरू न हो।",
+INV00068,CUST0004,2026-03-16,escalate_collections,ignore,55694.83,0.0,55694.83,overdue,English,llm,,"Dear Lewis, Miller and Barnes, our records show that Invoice INV00068 for INR 55,694.83, due on 2026‑02‑25, is now 4 days overdue. As this payment has not been received, the account will be referred to our collections process. Please arrange payment at your earliest convenience or contact us to discuss any issues.",
+INV00074,CUST0025,2026-03-16,escalate_collections,ignore,53667.01,0.0,53667.01,overdue,Hinglish,llm,,"Namaste Riley‑Bryant, aapka invoice INV00074 INR 53,667.01 ka, jo 20 Jan 2026 ko due tha, ab 40 din overdue hai. Kripya jald se jald payment arrange karen. Agar payment ab tak receive nahi hoti, to",
+INV00075,CUST0031,2026-03-16,escalate_collections,partial,146780.32,66651.11,80129.21,overdue,Hinglish,llm,,"Dear Brown‑Tate,
+
+Hamari records ke mutabik aapka invoice INV00075 INR 146,780.32 ka 2 Feb 2026 ko due tha aur abhi 27 din overdue hai. Kripya",
+INV00045,CUST0006,2026-03-19,promise_resolution,promise_kept,,462149.93,,paid,,,,,
+INV00053,CUST0010,2026-03-19,payment_plan_offer,pay,662935.35,662935.35,0.0,paid,English,template_fallback,Groq call failed: ValueError: Empty response from LLM,"Dear Garrison, Roberts and Thomas, we understand cash flow can be tight. For invoice INV00053 (INR 662,935.35, 3 days overdue), we're happy to work out a payment plan in installments if that helps. Please let us know a schedule that works for you, and we'll confirm the details.",
+INV00071,CUST0034,2026-03-19,phone_call,ignore,584421.19,0.0,584421.19,overdue,Hinglish,llm,,"Namaste, main XYZ Company",
+INV00018,CUST0030,2026-03-20,promise_resolution,promise_broken,,0.0,,overdue,,,,,
+INV00035,CUST0016,2026-03-20,promise_resolution,promise_broken,,0.0,,overdue,,,,,
+INV00046,CUST0002,2026-03-20,promise_resolution,promise_kept,,600484.83,,paid,,,,,
+INV00072,CUST0024,2026-03-20,promise_resolution,promise_broken,,0.0,,overdue,,,,,
+INV00018,CUST0030,2026-03-20,phone_call,pay,729716.33,729716.33,0.0,paid,Hinglish,template_fallback,Groq call failed: ValueError: Empty response from LLM,"[Call script] Kelly-Carr ko warmly greet karein. Invoice INV00018, INR 729,716.33, 8 din overdue ka reference dein. Poochein ki delay ki koi wajah hai kya. Agar dispute ya cash-flow issue hai to sunein. Zaroorat ho to payment plan discuss karne ki offer karein. Call khatam karne se pehle ek specific date confirm karein.",
+INV00035,CUST0016,2026-03-20,phone_call,pay,621949.16,621949.16,0.0,paid,Hinglish,llm,,"Namaste, main XYZ Company ke accounts receivable se baat kar raha/rahi hoon. Ward‑Wright ke liye invoice INV00035, amount INR 621,949.16, jo 24 Feb 2026 ko due tha, abhi 5 din overdue hai. Kya aap bata sakte hain ki",
+INV00048,CUST0024,2026-03-20,payment_plan_offer,ignore,274112.4,0.0,274112.4,overdue,Hinglish,llm,,"Namaste Peterson‑Bell team, hum aapko",
+INV00072,CUST0024,2026-03-20,phone_call,promise,76419.98,0.0,76419.98,promised,Hinglish,llm,,"Namaste, main XYZ Company ke accounts receivable team se baat kar raha hoon. Peterson‑Bell ke liye INV00072 invoice, INR 76,419.98, jo 23 Feb 2026 ko due tha, abhi 6 din overdue hai. Kya a",2026-03-30
+INV00071,CUST0034,2026-03-24,payment_plan_offer,ignore,584421.19,0.0,584421.19,overdue,Hinglish,llm,,"Namaste Cole PLC team, humne dekha hai ki Invoice INV00071, INR 584,421.19, jo 17 Feb 2026 ko due thi, abhi",
+INV00050,CUST0028,2026-03-26,promise_resolution,promise_kept,,348781.91,,paid,,,,,
+INV00072,CUST0024,2026-03-30,promise_resolution,promise_kept,,76419.98,,paid,,,,,
