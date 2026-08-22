@@ -161,7 +161,9 @@ def resolve_promises(states: dict, customers_by_id: dict, today: date, audit_tra
             audit_trail.append(entry)
 
 
-def run_simulation():
+def run_simulation(decide_fn=decide_next_action, seed=11, policy: dict = None):
+    policy = policy or POLICY
+    random.seed(seed)  # reset so both policies see the identical outcome-sampling sequence
     states, customers_by_id = load_states()
     response_model = load_hidden_response_model()
     audit_trail = []
@@ -173,10 +175,10 @@ def run_simulation():
         resolve_promises(states, customers_by_id, today, audit_trail)
 
         for state in states.values():
-            if state.status in POLICY["stopping_statuses"]:
+            if state.status in policy["stopping_statuses"]:
                 continue
 
-            decision = decide_next_action(state, today)
+            decision = decide_fn(state, today, policy)
 
             if decision.action == "wait":
                 continue

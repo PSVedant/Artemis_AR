@@ -66,20 +66,21 @@ def _highest_action_tier_used(state: InvoiceState) -> str:
     return max(used, key=lambda a: order.index(a))
 
 
-def decide_next_action(state: InvoiceState, today: date) -> Decision:
+def decide_next_action(state: InvoiceState, today: date, policy: dict = None) -> Decision:
+    policy = policy or POLICY
     # 1. Stopping rules first -- terminal states never get a new action
-    if state.status in POLICY["stopping_statuses"]:
+    if state.status in policy["stopping_statuses"]:
         return Decision(state.invoice_id, "wait",
                          f"Invoice status '{state.status}' is terminal -- no further action.")
 
-    if state.prior_contact_count >= POLICY["max_contact_attempts"]["value"]:
+    if state.prior_contact_count >= policy["max_contact_attempts"]["value"]:
         state.status = "exhausted"
         return Decision(state.invoice_id, "wait",
-                         f"Max contact attempts ({POLICY['max_contact_attempts']['value']}) reached -- "
+                         f"Max contact attempts ({policy['max_contact_attempts']['value']}) reached -- "
                          f"moved to 'exhausted' for manual review.")
 
     # 2. Cooldown check
-    cooldown = POLICY["cooldown_days"]["value"]
+    cooldown = policy["cooldown_days"]["value"]
     if state.last_contact_date is not None:
         days_since_contact = (today - state.last_contact_date).days
         if days_since_contact < cooldown:
@@ -96,7 +97,7 @@ def decide_next_action(state: InvoiceState, today: date) -> Decision:
                          "First contact -- starting at gentle tier per standard ladder.")
 
     # 4. Forced tier jump if last two actions were both ignored
-    order = POLICY["action_intensity_order"]
+    order = policy["action_intensity_order"]
     current_tier = _highest_action_tier_used(state)
     current_idx = order.index(current_tier)
 
@@ -109,7 +110,7 @@ def decide_next_action(state: InvoiceState, today: date) -> Decision:
 
     # 5. Escalation gate for escalate_collections
     if candidate_action == "escalate_collections":
-        gate = POLICY["escalate_collections_gate"]
+        gate = policy["escalate_collections_gate"]
         payment_plan_tried = any(a == "payment_plan_offer" for a, _ in state.action_history)
         severity_ok = (state.days_overdue >= gate["OR_min_days_overdue"] and
                        state.prior_contact_count >= gate["OR_min_prior_contacts"])
@@ -124,7 +125,7 @@ def decide_next_action(state: InvoiceState, today: date) -> Decision:
             return Decision(state.invoice_id, candidate_action, reason)
 
         # gate passed -- check human approval requirement
-        approval_policy = POLICY["human_approval_policy"]
+        approval_policy = policy["human_approval_policy"]
         needs_approval = state.importance_score >= approval_policy["always_require_manual_review_if_importance_score_at_or_above"]
 
         reason = "Escalation gate satisfied."
