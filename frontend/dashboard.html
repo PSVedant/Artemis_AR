@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artemis_AR — Receivables Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --color-canvas: #f5f5f5;
+    --color-paper: #ffffff;
+    --color-surface-alt: #fafafa;
+    --color-ink: #0a0a0a;
+    --color-ink-soft: #171717;
+    --color-mid-gray: #737373;
+    --color-hairline: #e5e5e5;
+    --color-ember: #e7000b;
+    --font-main: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --shadow-card: 0 1px 2px rgba(0,0,0,0.05), 0 0 0 1px rgba(23,23,23,0.04);
+    --shadow-card-hover: 0 4px 12px rgba(0,0,0,0.08), 0 0 0 1px rgba(23,23,23,0.05);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-font-smoothing: antialiased; }
+  body { font-family: var(--font-main); background: var(--color-canvas); color: var(--color-ink); font-size: 14px; line-height: 1.43; }
+  button { font-family: inherit; }
+
+  .layout { display: flex; min-height: 100vh; }
+
+  .sidebar {
+    width: 232px; background: var(--color-surface-alt); padding: 24px 16px;
+    flex-shrink: 0; display: flex; flex-direction: column;
+    border-right: 1px solid var(--color-hairline);
+    transition: width 0.2s ease, padding 0.2s ease;
+  }
+  .brand-row { display: flex; align-items: center; gap: 8px; margin-bottom: 2px; padding: 0 10px; }
+  .brand-mark {
+    width: 22px; height: 22px; border-radius: 6px; background: var(--color-ink);
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .brand-mark svg { width: 13px; height: 13px; stroke: var(--color-surface-alt); }
+  .brand { font-size: 16px; font-weight: 600; letter-spacing: -0.025em; white-space: nowrap; }
+  .subtitle { font-size: 12px; color: var(--color-mid-gray); margin-bottom: 28px; padding: 0 10px; white-space: nowrap; }
+
+  .nav-section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-mid-gray); font-weight: 500; padding: 0 10px; margin-bottom: 8px; white-space: nowrap; }
+  .nav-item {
+    display: flex; align-items: center; gap: 10px; padding: 8px 10px 8px 8px;
+    border-radius: 10px; font-size: 14px; font-weight: 500; color: var(--color-mid-gray);
+    cursor: pointer; margin-bottom: 2px; position: relative;
+    border-left: 3px solid transparent;
+    transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+  }
+  .nav-item svg { width: 16px; height: 16px; stroke-width: 1.75; flex-shrink: 0; }
+  .nav-item.active { background: var(--color-paper); box-shadow: var(--shadow-card); color: var(--color-ink); border-left-color: var(--color-ink); }
+  .nav-item:not(.active):hover { background: rgba(0,0,0,0.03); color: var(--color-ink); }
+  .nav-label { white-space: nowrap; overflow: hidden; }
+
+  .sidebar-footer { margin-top: auto; padding: 12px 10px 0; border-top: 1px solid var(--color-hairline); font-size: 12px; color: var(--color-mid-gray); display: flex; align-items: center; white-space: nowrap; }
+  .status-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 6px; flex-shrink: 0; }
+  .status-dot.connected { background: #16a34a; animation: pulse 2s ease-in-out infinite; }
+  .status-dot.disconnected { background: var(--color-ember); }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+  .hamburger { display: none; }
+
+  .main { flex: 1; max-width: 1280px; min-width: 0; }
+
+  .topbar { display: flex; align-items: center; justify-content: space-between; padding: 20px 40px; border-bottom: 1px solid var(--color-hairline); gap: 16px; flex-wrap: wrap; }
+  .breadcrumb { font-size: 14px; color: var(--color-mid-gray); }
+  .breadcrumb .current { color: var(--color-ink); font-weight: 500; }
+  .breadcrumb .sep { margin: 0 8px; color: var(--color-hairline); }
+  .topbar-right { display: flex; align-items: center; gap: 14px; }
+  .last-updated { font-size: 12px; color: var(--color-mid-gray); white-space: nowrap; }
+  .btn-refresh {
+    display: flex; align-items: center; gap: 6px; background: var(--color-canvas); border: none;
+    border-radius: 18px; padding: 7px 14px; font-size: 13px; font-weight: 500; color: var(--color-ink);
+    cursor: pointer; transition: background 0.12s ease;
+  }
+  .btn-refresh:hover { background: var(--color-hairline); }
+  .btn-refresh:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 2px; }
+  .btn-refresh svg { width: 13px; height: 13px; stroke-width: 2; }
+  .btn-refresh.spinning svg { animation: spin 0.7s linear infinite; }
+
+  .page { padding: 40px; }
+  .page-eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-mid-gray); font-weight: 500; margin-bottom: 8px; }
+  h1 { font-size: 30px; font-weight: 600; letter-spacing: -0.0075em; line-height: 1.2; margin-bottom: 4px; }
+  .page-sub { font-size: 14px; color: var(--color-mid-gray); margin-bottom: 32px; }
+
+  .hero-card { background: var(--color-paper); border-radius: 24px; box-shadow: var(--shadow-card); padding: 32px; margin-bottom: 20px; display: flex; align-items: center; gap: 40px; }
+  .donut-wrap { position: relative; width: 148px; height: 148px; flex-shrink: 0; }
+  .donut-wrap svg { transform: rotate(-90deg); }
+  .donut-track { fill: none; stroke: var(--color-canvas); stroke-width: 12; }
+  .donut-fill { fill: none; stroke: var(--color-ink); stroke-width: 12; stroke-linecap: round; transition: stroke-dasharray 0.6s ease; }
+  .donut-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .donut-value { font-size: 30px; font-weight: 600; letter-spacing: -0.025em; }
+  .donut-label { font-size: 11px; color: var(--color-mid-gray); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; }
+  .hero-side { flex: 1; min-width: 0; }
+  .hero-eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-mid-gray); font-weight: 500; margin-bottom: 6px; }
+  .hero-headline { font-size: 36px; font-weight: 500; letter-spacing: -0.0225em; line-height: 1.11; margin-bottom: 12px; }
+  .hero-sub { font-size: 14px; color: var(--color-mid-gray); max-width: 480px; }
+
+  .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px; }
+  .stat-block { background: var(--color-paper); border-radius: 24px; box-shadow: var(--shadow-card); padding: 20px; transition: box-shadow 0.15s ease, transform 0.15s ease; }
+  .stat-block:hover { box-shadow: var(--shadow-card-hover); transform: translateY(-1px); }
+  .stat-block.alert { box-shadow: var(--shadow-card), inset 0 0 0 1px rgba(231,0,11,0.15); }
+  .stat-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .stat-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-mid-gray); font-weight: 500; }
+  .stat-icon { width: 16px; height: 16px; stroke: var(--color-mid-gray); stroke-width: 1.75; }
+  .stat-value { font-size: 30px; font-weight: 600; letter-spacing: -0.025em; }
+  .stat-value.alert-text { color: var(--color-ember); }
+  .stat-delta { font-size: 12px; color: var(--color-mid-gray); margin-top: 4px; }
+
+  .card { background: var(--color-paper); border-radius: 24px; box-shadow: var(--shadow-card); overflow: hidden; margin-bottom: 20px; }
+  .card-header { display: flex; justify-content: space-between; align-items: center; padding: 18px 20px; border-bottom: 1px solid var(--color-hairline); background: var(--color-surface-alt); }
+  .card-title { font-size: 15px; font-weight: 600; letter-spacing: -0.01em; }
+  .card-note { font-size: 12px; color: var(--color-mid-gray); }
+  .card-body { padding: 20px; }
+
+  .stacked-bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; margin-bottom: 14px; background: var(--color-canvas); }
+  .stacked-seg { height: 100%; }
+  .stacked-legend { display: flex; flex-wrap: wrap; gap: 14px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--color-mid-gray); }
+  .legend-swatch { width: 8px; height: 8px; border-radius: 2px; }
+
+  table { width: 100%; border-collapse: collapse; }
+  th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-mid-gray); font-weight: 500; padding: 10px 20px; border-bottom: 1px solid var(--color-hairline); }
+  td { padding: 12px 20px; font-size: 14px; border-bottom: 1px solid var(--color-hairline); }
+  tr:last-child td { border-bottom: none; }
+  tr.clickable { cursor: pointer; transition: background 0.1s ease; }
+  tr.clickable:hover { background: var(--color-surface-alt); }
+  tr.clickable:focus-visible { outline: 2px solid var(--color-ink); outline-offset: -2px; }
+  .mono { font-variant-numeric: tabular-nums; }
+  .cell-primary { font-weight: 500; }
+
+  .badge { display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px; border-radius: 18px; font-size: 12px; font-weight: 500; white-space: nowrap; }
+  .badge-dot { width: 5px; height: 5px; border-radius: 50%; }
+  .badge-solid { background: var(--color-ink-soft); color: var(--color-surface-alt); }
+  .badge-outline { background: transparent; border: 1px solid var(--color-hairline); color: var(--color-ink); }
+  .status-paid { background: #e8f5e9; color: #1e7e34; }
+  .status-paid .badge-dot { background: #1e7e34; }
+  .status-overdue { background: var(--color-canvas); color: var(--color-ink); }
+  .status-overdue .badge-dot { background: var(--color-mid-gray); }
+  .status-exhausted { background: transparent; border: 1px solid var(--color-hairline); color: var(--color-mid-gray); }
+  .status-exhausted .badge-dot { background: var(--color-mid-gray); }
+  .status-denied { background: #fdeaea; color: var(--color-ember); }
+  .status-denied .badge-dot { background: var(--color-ember); }
+
+  .skel { background: linear-gradient(90deg, var(--color-hairline) 25%, #f0f0f0 37%, var(--color-hairline) 63%); background-size: 400% 100%; animation: shimmer 1.4s ease infinite; border-radius: 6px; }
+  @keyframes shimmer { 0% { background-position: 100% 50%; } 100% { background-position: 0 50%; } }
+  .skel-stat { height: 120px; border-radius: 24px; }
+  .skel-hero { height: 180px; border-radius: 24px; }
+  .skel-text { height: 14px; width: 80%; }
+
+  .empty-state { text-align: center; padding: 56px 20px; color: var(--color-mid-gray); }
+  .empty-state svg { width: 32px; height: 32px; stroke: var(--color-hairline); stroke-width: 1.5; margin-bottom: 12px; }
+  .empty-state .empty-title { font-size: 14px; font-weight: 500; color: var(--color-ink); margin-bottom: 4px; }
+  .empty-state .empty-sub { font-size: 13px; }
+
+  .connection-banner {
+    display: flex; align-items: center; gap: 12px;
+    background: var(--color-paper); border: 1px solid var(--color-hairline);
+    border-left: 3px solid var(--color-ember);
+    border-radius: 14px; padding: 16px 20px; margin-bottom: 24px;
+  }
+  .connection-banner svg { width: 20px; height: 20px; stroke: var(--color-ember); stroke-width: 1.75; flex-shrink: 0; }
+  .connection-banner-text { flex: 1; font-size: 14px; }
+  .connection-banner-text strong { display: block; margin-bottom: 2px; }
+  .connection-banner-text .sub { color: var(--color-mid-gray); font-size: 13px; }
+  .connection-banner-text code { background: var(--color-canvas); padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
+  .btn-retry { background: var(--color-ink); color: var(--color-paper); border: none; border-radius: 18px; padding: 7px 16px; font-size: 13px; font-weight: 500; cursor: pointer; flex-shrink: 0; }
+  .btn-retry:hover { background: var(--color-ink-soft); }
+
+  .toast-stack { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 100; }
+  .toast {
+    background: var(--color-ink); color: var(--color-paper);
+    border-radius: 14px; padding: 12px 16px; font-size: 13px; font-weight: 500;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    display: flex; align-items: center; gap: 8px;
+    animation: toast-in 0.2s ease;
+    max-width: 320px;
+  }
+  .toast svg { width: 15px; height: 15px; stroke-width: 2; flex-shrink: 0; }
+  @keyframes toast-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .drawer-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.3); z-index: 50; opacity: 0; pointer-events: none; transition: opacity 0.2s ease; }
+  .drawer-overlay.open { opacity: 1; pointer-events: auto; }
+  .drawer {
+    position: fixed; top: 0; right: 0; bottom: 0; width: 480px; max-width: 92vw;
+    background: var(--color-paper); z-index: 51; box-shadow: -8px 0 32px rgba(0,0,0,0.12);
+    transform: translateX(100%); transition: transform 0.25s ease;
+    display: flex; flex-direction: column;
+  }
+  .drawer.open { transform: translateX(0); }
+  .drawer-header { padding: 20px 24px; border-bottom: 1px solid var(--color-hairline); display: flex; justify-content: space-between; align-items: flex-start; }
+  .drawer-title { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; }
+  .drawer-sub { font-size: 13px; color: var(--color-mid-gray); margin-top: 2px; }
+  .drawer-close { background: var(--color-canvas); border: none; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0; }
+  .drawer-close svg { width: 14px; height: 14px; stroke-width: 2; }
+  .drawer-body { flex: 1; overflow-y: auto; padding: 20px 24px; }
+
+  .message-block { background: var(--color-surface-alt); border: 1px solid var(--color-hairline); border-radius: 14px; padding: 14px 16px; margin-bottom: 10px; font-size: 13.5px; line-height: 1.55; }
+  .message-meta { font-size: 12px; color: var(--color-mid-gray); margin-bottom: 8px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .message-text { white-space: pre-wrap; color: var(--color-ink); }
+
+  .breakdown-list { display: flex; flex-direction: column; gap: 12px; }
+  .breakdown-row { display: flex; justify-content: space-between; align-items: center; font-size: 14px; }
+  .breakdown-label { min-width: 150px; text-transform: capitalize; }
+  .breakdown-bar-track { flex: 1; height: 6px; background: var(--color-canvas); border-radius: 3px; margin: 0 14px; overflow: hidden; }
+  .breakdown-bar-fill { height: 100%; background: var(--color-ink-soft); border-radius: 3px; transition: width 0.4s ease; }
+  .breakdown-count { font-weight: 500; min-width: 24px; text-align: right; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+  .urgent-list { display: flex; flex-direction: column; gap: 2px; }
+  .urgent-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--color-hairline); font-size: 13.5px; }
+  .urgent-item:last-child { border-bottom: none; }
+  .urgent-item-main { display: flex; flex-direction: column; gap: 2px; }
+  .urgent-item-id { font-weight: 500; }
+  .urgent-item-sub { font-size: 12px; color: var(--color-mid-gray); }
+
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { background: var(--color-hairline); border-radius: 4px; }
+
+  @media (max-width: 900px) {
+    .hamburger { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: var(--color-canvas); border: none; border-radius: 8px; cursor: pointer; }
+    .sidebar { position: fixed; z-index: 60; height: 100vh; transform: translateX(-100%); transition: transform 0.2s ease; }
+    .sidebar.open { transform: translateX(0); }
+    .stat-grid, .two-col { grid-template-columns: 1fr; }
+    .hero-card { flex-direction: column; text-align: center; }
+    .page { padding: 24px; }
+    .topbar { padding: 16px 20px; }
+  }
+  @media (min-width: 901px) { .hamburger { display: none; } }
+</style>
+</head>
+<body>
+
+<div class="layout">
+  <div class="sidebar" id="sidebar">
+    <div class="brand-row">
+      <div class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg></div>
+      <span class="brand">Artemis_AR</span>
+    </div>
+    <div class="subtitle">Receivables command center</div>
+
+    <div class="nav-section-label">Overview</div>
+    <div class="nav-item active" data-view="overview" role="button" tabindex="0" aria-label="Command Center">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+      <span class="nav-label">Command Center</span>
+    </div>
+
+    <div class="nav-section-label" style="margin-top:20px">Ledger</div>
+    <div class="nav-item" data-view="invoices" role="button" tabindex="0" aria-label="Invoices">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg>
+      <span class="nav-label">Invoices</span>
+    </div>
+    <div class="nav-item" data-view="exceptions" role="button" tabindex="0" aria-label="Exceptions">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+      <span class="nav-label">Exceptions</span>
+    </div>
+    <div class="nav-item" data-view="audit" role="button" tabindex="0" aria-label="Audit Trail">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="9"/></svg>
+      <span class="nav-label">Audit Trail</span>
+    </div>
+
+    <div class="sidebar-footer" role="status" aria-live="polite">
+      <span class="status-dot" id="status-dot"></span><span id="status-text">Connecting…</span>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+        <div class="breadcrumb"><span id="breadcrumb-text">Artemis_AR <span class="sep">/</span> <span class="current">Command Center</span></span></div>
+      </div>
+      <div class="topbar-right">
+        <span class="last-updated" id="last-updated"></span>
+        <button class="btn-refresh" id="refresh-btn" aria-label="Refresh data">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+          Refresh
+        </button>
+      </div>
+    </div>
+    <div class="page" id="content"></div>
+  </div>
+</div>
+
+<div class="drawer-overlay" id="drawer-overlay"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-header">
+    <div>
+      <div class="drawer-title" id="drawer-title">—</div>
+      <div class="drawer-sub" id="drawer-sub">—</div>
+    </div>
+    <button class="drawer-close" id="drawer-close" aria-label="Close detail panel">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</div>
+
+<div class="toast-stack" id="toast-stack" aria-live="polite"></div>
+
+<script>
+/* ======================================================================
+   1. API SERVICE
+   All network calls live here. Every function returns real data from the
+   FastAPI backend or throws -- nothing here fabricates or mocks data.
+   ====================================================================== */
+const API_BASE = "http://localhost:8000";
+
+async function apiGet(path) {
+  const res = await fetch(API_BASE + path);
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({detail: res.statusText}));
+    throw new Error(body.detail || `Request failed: ${res.status}`);
+  }
+  return res.json();
+}
+
+const Api = {
+  health: () => apiGet("/health"),
+  metrics: () => apiGet("/metrics"),
+  invoices: () => apiGet("/invoices"),
+  invoiceDetail: (id) => apiGet(`/invoices/${id}`),
+  exceptions: () => apiGet("/exceptions"),
+  auditTrail: (limit = 100) => apiGet(`/audit-trail?limit=${limit}`),
+};
+
+/* ======================================================================
+   2. STATE MANAGEMENT
+   ====================================================================== */
+const State = {
+  currentView: "overview",
+  connected: null,
+  lastUpdated: null,
+};
+
+function setConnection(ok) {
+  State.connected = ok;
+  const dot = document.getElementById("status-dot");
+  const text = document.getElementById("status-text");
+  dot.className = "status-dot " + (ok ? "connected" : "disconnected");
+  text.textContent = ok ? "API connected" : "API unreachable";
+}
+
+function touchLastUpdated() {
+  State.lastUpdated = new Date();
+  renderLastUpdated();
+}
+
+function renderLastUpdated() {
+  const el = document.getElementById("last-updated");
+  if (!State.lastUpdated) { el.textContent = ""; return; }
+  const secs = Math.round((Date.now() - State.lastUpdated.getTime()) / 1000);
+  el.textContent = secs < 5 ? "Updated just now" : `Updated ${secs}s ago`;
+}
+setInterval(renderLastUpdated, 5000);
+
+/* ======================================================================
+   3. RENDER FUNCTIONS
+   ====================================================================== */
+
+const ICONS = {
+  invoice: `<path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/>`,
+  exception: `<path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><path d="M12 9v4M12 17h.01"/>`,
+  money: `<path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>`,
+  empty: `<circle cx="12" cy="12" r="9"/><path d="M9 12h6"/>`,
+  alert: `<path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><path d="M12 9v4M12 17h.01"/>`,
+  check: `<path d="M20 6L9 17l-5-5"/>`,
+};
+
+function fmtINR(n) {
+  if (n === null || n === undefined) return "—";
+  return "₹" + Number(n).toLocaleString("en-IN", {maximumFractionDigits: 0});
+}
+
+function statusMeta(status) {
+  const map = {
+    paid: { cls: "status-paid", label: "Paid" },
+    overdue: { cls: "status-overdue", label: "Overdue" },
+    exhausted: { cls: "status-exhausted", label: "Exhausted" },
+    manual_review_denied: { cls: "status-denied", label: "Manual review" },
+    awaiting_approval: { cls: "status-overdue", label: "Awaiting approval" },
+  };
+  return map[status] || { cls: "status-overdue", label: (status || "overdue").replace(/_/g, ' ') };
+}
+function statusBadge(status) {
+  const m = statusMeta(status);
+  return `<span class="badge ${m.cls}"><span class="badge-dot"></span>${m.label}</span>`;
+}
+
+function setBreadcrumb(label) {
+  document.getElementById("breadcrumb-text").innerHTML = `Artemis_AR <span class="sep">/</span> <span class="current">${label}</span>`;
+}
+
+function showToast(message, kind) {
+  const stack = document.getElementById("toast-stack");
+  const el = document.createElement("div");
+  el.className = "toast";
+  el.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">${kind === "success" ? ICONS.check : ICONS.alert}</svg>${message}`;
+  stack.appendChild(el);
+  setTimeout(() => { el.style.opacity = "0"; el.style.transition = "opacity 0.3s"; setTimeout(() => el.remove(), 300); }, 2800);
+}
+
+function connectionBanner(message) {
+  return `
+    <div class="connection-banner">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">${ICONS.alert}</svg>
+      <div class="connection-banner-text">
+        <strong>Can't reach the API</strong>
+        <span class="sub">${message} — start it with <code>uvicorn src.api:app --port 8000</code></span>
+      </div>
+      <button class="btn-retry" onclick="views[State.currentView]()">Retry</button>
+    </div>`;
+}
+
+function emptyState(iconKey, title, sub) {
+  return `<div class="empty-state">
+    <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">${ICONS[iconKey] || ICONS.empty}</svg>
+    <div class="empty-title">${title}</div>
+    <div class="empty-sub">${sub}</div>
+  </div>`;
+}
+
+function donutSVG(pct) {
+  const r = 62, circumference = 2 * Math.PI * r;
+  const filled = (pct / 100) * circumference;
+  return `
+    <div class="donut-wrap">
+      <svg width="148" height="148" viewBox="0 0 148 148">
+        <circle class="donut-track" cx="74" cy="74" r="${r}"/>
+        <circle class="donut-fill" cx="74" cy="74" r="${r}" stroke-dasharray="${filled} ${circumference}"/>
+      </svg>
+      <div class="donut-center"><div class="donut-value">${pct}%</div><div class="donut-label">Recovered</div></div>
+    </div>`;
+}
+
+function skeletonOverview() {
+  return `
+    <div class="skel skel-hero" style="margin-bottom:20px"></div>
+    <div class="stat-grid">
+      <div class="skel skel-stat"></div><div class="skel skel-stat"></div><div class="skel skel-stat"></div>
+    </div>`;
+}
+function skeletonTable(rows) {
+  rows = rows || 6;
+  return `<div class="card"><div class="card-body">` +
+    Array.from({length: rows}).map(() => `<div class="skel skel-text" style="margin-bottom:14px"></div>`).join('') +
+    `</div></div>`;
+}
+
+function openDrawer(title, sub) {
+  document.getElementById("drawer-title").textContent = title;
+  document.getElementById("drawer-sub").textContent = sub;
+  document.getElementById("drawer").classList.add("open");
+  document.getElementById("drawer-overlay").classList.add("open");
+}
+function closeDrawer() {
+  document.getElementById("drawer").classList.remove("open");
+  document.getElementById("drawer-overlay").classList.remove("open");
+}
+document.getElementById("drawer-close").addEventListener("click", closeDrawer);
+document.getElementById("drawer-overlay").addEventListener("click", closeDrawer);
+
+async function renderOverview() {
+  State.currentView = "overview";
+  setBreadcrumb("Command Center");
+  const content = document.getElementById("content");
+  content.innerHTML = `<div class="page-eyebrow">Live status</div><h1>Command Center</h1>
+    <div class="page-sub">Real-time B2B receivables recovery, powered by a bounded, gated dunning agent</div>
+    ${skeletonOverview()}`;
+
+  try {
+    const results = await Promise.all([Api.metrics(), Api.invoices()]);
+    const metrics = results[0];
+    const invoicesData = results[1];
+    setConnection(true);
+    touchLastUpdated();
+
+    const statusEntries = Object.entries(metrics.status_breakdown || {});
+    const actionEntries = Object.entries(metrics.action_breakdown || {});
+    const maxAction = Math.max.apply(null, actionEntries.map(function(e) { return e[1]; }).concat([1]));
+    const exceptions = (metrics.status_breakdown.exhausted || 0) + (metrics.status_breakdown.manual_review_denied || 0);
+    const total = metrics.total_invoices || 1;
+
+    const colorFor = { paid: "#1e7e34", exhausted: "#a3a3a3", manual_review_denied: "#e7000b", overdue: "#0a0a0a", awaiting_approval: "#0a0a0a" };
+
+    const urgent = invoicesData.invoices
+      .filter(function(i) { return i.current_status === "overdue"; })
+      .sort(function(a, b) { return b.remaining_amount - a.remaining_amount; })
+      .slice(0, 3);
+
+    content.innerHTML = `
+      <div class="page-eyebrow">Live status</div>
+      <h1>Command Center</h1>
+      <div class="page-sub">Real-time B2B receivables recovery, powered by a bounded, gated dunning agent</div>
+
+      <div class="hero-card">
+        ${donutSVG(metrics.recovery_rate_pct)}
+        <div class="hero-side">
+          <div class="hero-eyebrow">Recovery performance</div>
+          <div class="hero-headline">${fmtINR(metrics.total_recovered)} recovered<br>of ${fmtINR(metrics.total_original_amount)} outstanding</div>
+          <div class="hero-sub">Across ${metrics.total_invoices} tracked invoices, with ${exceptions} genuine exceptions flagged for manual review — not silently dropped.</div>
+        </div>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-block">
+          <div class="stat-top"><span class="stat-label">Total invoices</span><svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">${ICONS.invoice}</svg></div>
+          <div class="stat-value">${metrics.total_invoices}</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-top"><span class="stat-label">Amount recovered</span><svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">${ICONS.money}</svg></div>
+          <div class="stat-value">${fmtINR(metrics.total_recovered)}</div>
+        </div>
+        <div class="stat-block ${exceptions > 0 ? 'alert' : ''}">
+          <div class="stat-top"><span class="stat-label">Exceptions</span><svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">${ICONS.exception}</svg></div>
+          <div class="stat-value ${exceptions > 0 ? 'alert-text' : ''}">${exceptions}</div>
+          <div class="stat-delta">Flagged honestly, not auto-resolved</div>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="card">
+          <div class="card-header"><span class="card-title">Status breakdown</span><span class="card-note">${total} total</span></div>
+          <div class="card-body">
+            <div class="stacked-bar">
+              ${statusEntries.map(function(e) { return `<div class="stacked-seg" style="width:${100*e[1]/total}%; background:${colorFor[e[0]]||'#999'}"></div>`; }).join('')}
+            </div>
+            <div class="stacked-legend">
+              ${statusEntries.map(function(e) { return `<span class="legend-item"><span class="legend-swatch" style="background:${colorFor[e[0]]||'#999'}"></span>${statusMeta(e[0]).label} (${e[1]})</span>`; }).join('')}
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header"><span class="card-title">Needs attention</span><span class="card-note">highest value, still overdue</span></div>
+          <div class="card-body">
+            ${urgent.length ? `<div class="urgent-list">${urgent.map(function(u) { return `
+              <div class="urgent-item">
+                <div class="urgent-item-main">
+                  <span class="urgent-item-id">${u.invoice_id} — ${u.customer_name}</span>
+                  <span class="urgent-item-sub">${u.days_overdue} days overdue</span>
+                </div>
+                <span class="mono">${fmtINR(u.remaining_amount)}</span>
+              </div>`; }).join('')}</div>` : emptyState('check', 'Nothing urgent', 'No invoices currently overdue without a plan.')}
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Actions taken</span><span class="card-note">by type</span></div>
+        <div class="card-body">
+          <div class="breakdown-list">
+            ${actionEntries.map(function(e) { return `
+              <div class="breakdown-row">
+                <span class="breakdown-label">${e[0].replace(/_/g, ' ')}</span>
+                <div class="breakdown-bar-track"><div class="breakdown-bar-fill" style="width:${100*e[1]/maxAction}%"></div></div>
+                <span class="breakdown-count">${e[1]}</span>
+              </div>`; }).join('')}
+          </div>
+        </div>
+      </div>
+    `;
+  } catch (e) {
+    setConnection(false);
+    content.innerHTML = `<div class="page-eyebrow">Live status</div><h1>Command Center</h1>` + connectionBanner(e.message);
+  }
+}
+
+async function renderInvoices() {
+  State.currentView = "invoices";
+  setBreadcrumb("Invoices");
+  const content = document.getElementById("content");
+  content.innerHTML = `<div class="page-eyebrow">Ledger</div><h1>Invoices</h1><div class="page-sub">Every tracked receivable, real-time status</div>${skeletonTable()}`;
+
+  try {
+    const data = await Api.invoices();
+    setConnection(true);
+    touchLastUpdated();
+
+    const rows = data.invoices.map(function(inv) { return `
+      <tr class="clickable" tabindex="0" role="button" aria-label="View ${inv.invoice_id} detail"
+          onclick="showInvoiceDetail('${inv.invoice_id}')" onkeypress="if(event.key==='Enter')showInvoiceDetail('${inv.invoice_id}')">
+        <td class="cell-primary">${inv.invoice_id}</td>
+        <td>${inv.customer_name || inv.customer_id}</td>
+        <td><span class="badge badge-outline">${inv.relationship_tier || '—'}</span></td>
+        <td class="mono">${fmtINR(inv.remaining_amount)}</td>
+        <td class="mono">${inv.days_overdue}d</td>
+        <td>${statusBadge(inv.current_status)}</td>
+      </tr>`; }).join('');
+
+    content.innerHTML = `
+      <div class="page-eyebrow">Ledger</div><h1>Invoices</h1>
+      <div class="page-sub">${data.count} invoices tracked — click a row for full real history</div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Invoice</th><th>Customer</th><th>Tier</th><th>Remaining</th><th>Overdue</th><th>Status</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>`;
+  } catch (e) {
+    setConnection(false);
+    content.innerHTML = `<div class="page-eyebrow">Ledger</div><h1>Invoices</h1>` + connectionBanner(e.message);
+  }
+}
+
+async function showInvoiceDetail(invoiceId) {
+  openDrawer(invoiceId, "Loading…");
+  const body = document.getElementById("drawer-body");
+  body.innerHTML = skeletonTable(4);
+  try {
+    const data = await Api.invoiceDetail(invoiceId);
+    document.getElementById("drawer-title").textContent = invoiceId;
+    document.getElementById("drawer-sub").textContent = data.customer.customer_name || '';
+
+    const history = (data.action_history || []).filter(function(h) { return h.action; }).map(function(h) { return `
+      <div class="message-block">
+        <div class="message-meta">
+          <span class="badge badge-outline">${(h.action||'').replace(/_/g,' ')}</span>
+          <span>${h.date}</span>
+          <span>outcome: <strong>${h.outcome || '—'}</strong></span>
+          ${h.human_decision ? `<span class="badge badge-solid">human: ${h.human_decision}</span>` : ''}
+          ${h.message_source ? `<span>via ${h.message_source}</span>` : ''}
+        </div>
+        <div class="message-text">${h.message_text || '<em style="color:var(--color-mid-gray)">No message for this entry</em>'}</div>
+      </div>`; }).join('') || emptyState('empty', 'No actions yet', 'This invoice has not been contacted.');
+
+    body.innerHTML = `<div class="card-note" style="margin-bottom:14px">${data.action_history_count} real recorded actions</div>${history}`;
+  } catch (e) {
+    body.innerHTML = connectionBanner(e.message);
+  }
+}
+
+async function renderExceptions() {
+  State.currentView = "exceptions";
+  setBreadcrumb("Exceptions");
+  const content = document.getElementById("content");
+  content.innerHTML = `<div class="page-eyebrow">Honest reporting</div><h1>Exceptions</h1><div class="page-sub">Invoices that could not be resolved automatically</div>${skeletonTable()}`;
+
+  try {
+    const data = await Api.exceptions();
+    setConnection(true);
+    touchLastUpdated();
+
+    if (data.count === 0) {
+      content.innerHTML = `<div class="page-eyebrow">Honest reporting</div><h1>Exceptions</h1><div class="page-sub">Invoices that could not be resolved automatically</div>
+        <div class="card"><div class="card-body">${emptyState('exception', 'No exceptions', 'Every invoice resolved automatically.')}</div></div>`;
+      return;
+    }
+    const rows = data.exceptions.map(function(e) { return `
+      <tr>
+        <td class="cell-primary">${e.invoice_id}</td>
+        <td>${e.customer_name}</td>
+        <td><span class="badge badge-outline">${e.relationship_tier}</span></td>
+        <td class="mono">${fmtINR(e.remaining_amount)}</td>
+        <td>${statusBadge(e.status)}</td>
+        <td style="max-width:320px; font-size:13px; color:var(--color-mid-gray)">${e.reason}</td>
+      </tr>`; }).join('');
+
+    content.innerHTML = `
+      <div class="page-eyebrow">Honest reporting</div><h1>Exceptions</h1>
+      <div class="page-sub">${data.count} invoices need manual follow-up — this is the honest, unresolved list</div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Invoice</th><th>Customer</th><th>Tier</th><th>At risk</th><th>Status</th><th>Reason</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>`;
+  } catch (e) {
+    setConnection(false);
+    content.innerHTML = `<div class="page-eyebrow">Honest reporting</div><h1>Exceptions</h1>` + connectionBanner(e.message);
+  }
+}
+
+async function renderAudit() {
+  State.currentView = "audit";
+  setBreadcrumb("Audit Trail");
+  const content = document.getElementById("content");
+  content.innerHTML = `<div class="page-eyebrow">Full transparency</div><h1>Audit Trail</h1><div class="page-sub">Every real action taken, in order</div>${skeletonTable()}`;
+
+  try {
+    const data = await Api.auditTrail(100);
+    setConnection(true);
+    touchLastUpdated();
+
+    const rows = data.entries.filter(function(e) { return e.action; }).map(function(e) { return `
+      <tr>
+        <td class="mono">${e.date}</td>
+        <td class="cell-primary">${e.invoice_id}</td>
+        <td><span class="badge badge-outline">${(e.action||'').replace(/_/g,' ')}</span></td>
+        <td>${e.outcome || '—'}</td>
+        <td class="mono">${fmtINR(e.amount_recovered)}</td>
+        <td>${e.human_decision ? `<span class="badge badge-solid">${e.human_decision}</span>` : '—'}</td>
+      </tr>`; }).join('');
+
+    content.innerHTML = `
+      <div class="page-eyebrow">Full transparency</div><h1>Audit Trail</h1>
+      <div class="page-sub">Showing ${data.count} most recent entries — every action, outcome, and amount is real</div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Date</th><th>Invoice</th><th>Action</th><th>Outcome</th><th>Recovered</th><th>Human decision</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>`;
+  } catch (e) {
+    setConnection(false);
+    content.innerHTML = `<div class="page-eyebrow">Full transparency</div><h1>Audit Trail</h1>` + connectionBanner(e.message);
+  }
+}
+
+const views = { overview: renderOverview, invoices: renderInvoices, exceptions: renderExceptions, audit: renderAudit };
+
+document.querySelectorAll(".nav-item").forEach(function(item) {
+  const activate = function() {
+    document.querySelectorAll(".nav-item").forEach(function(i) { i.classList.remove("active"); });
+    item.classList.add("active");
+    views[item.dataset.view]();
+    if (window.innerWidth <= 900) document.getElementById("sidebar").classList.remove("open");
+  };
+  item.addEventListener("click", activate);
+  item.addEventListener("keypress", function(e) { if (e.key === "Enter") activate(); });
+});
+
+document.getElementById("hamburger-btn").addEventListener("click", function() {
+  document.getElementById("sidebar").classList.toggle("open");
+});
+
+document.getElementById("refresh-btn").addEventListener("click", async function(e) {
+  const btn = e.currentTarget;
+  btn.classList.add("spinning");
+  try {
+    await views[State.currentView]();
+    if (State.connected) showToast("Refreshed", "success");
+  } finally {
+    btn.classList.remove("spinning");
+  }
+});
+
+renderOverview();
+</script>
+
+</body>
+</html>
