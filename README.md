@@ -95,7 +95,6 @@ uvicorn src.api:app --port 8000
 
 ## Honest limitations
 
-Stated up front, not waiting to be asked:
 
 - **The hidden response model is self-designed, not empirical.** The probabilities governing whether a customer pays, ignores, or promises were written by me to be *plausible*, not fitted to real collections data. "74.2% recovery" demonstrates the mechanism works — it is not a validated prediction of real-world performance. Anyone claiming otherwise about a system like this should be doubted.
 - **No live Razorpay integration.** This track is scored partly on platform usage; this submission is a self-contained simulation with no test-mode API calls. That's a real gap, not a stylistic choice — noting it here rather than hoping it goes unnoticed.
@@ -105,24 +104,6 @@ Stated up front, not waiting to be asked:
 
 ---
 
-## Demo script (≈3 minutes)
-
-1. **(30s) The problem.** "B2B AR teams either chase customers with a rigid schedule that damages VIP relationships, or manually decide every case, which doesn't scale. This tries to do both — automate the easy calls, escalate the hard ones to a human."
-2. **(45s) Show the dashboard.** Command Center → recovery rate, exceptions honestly counted, not hidden. Click into an invoice → real audit trail, real drafted message.
-3. **(60s) The actual differentiator — run this live if you can.** Terminal: `python -m src.resolve_approvals`. Show a real case pausing, waiting on you. Approve one, deny one. "This isn't a log of what happened — the system genuinely cannot act on these without a human."
-4. **(30s) The honest exceptions.** Exceptions tab — "these are the ones we couldn't resolve, and why, not swept under the rug."
-5. **(15s) One sentence on limitations.** "The response model is a designed simulation, not real customer data — this proves the mechanism, and the next step is validating it against real Razorpay transaction data."
-
----
-
-## Interview talking points
-
-- **"How do you know your metrics are trustworthy?"** → Explain the hidden ground truth / train-test separation, and be upfront that the response model itself is self-designed, not empirical.
-- **"Walk me through a mistake you caught."** → Day 4's baseline comparison: initially looked like the naive policy protected VIPs better, actually just never reached that tier due to a cap interaction. Built a controlled follow-up experiment instead of reporting the flattering number.
-- **"What would you build next?"** → Real Razorpay test-mode integration (payment links via the API for `payment_plan_offer`), a persisted test suite beyond Day 2, and surfacing the approval gate in the dashboard instead of only the CLI.
-- **"Why gate on importance_score instead of amount?"** → Relationship damage from escalation scales with how much a customer matters long-term, not just the invoice size — a small overdue invoice from a VIP still warrants more care than a large one from a one-time buyer.
-
----
 
 ## Project structure
 
