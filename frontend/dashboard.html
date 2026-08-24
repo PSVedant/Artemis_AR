@@ -23,13 +23,13 @@
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { -webkit-font-smoothing: antialiased; }
-  body { font-family: var(--font-main); background: var(--color-canvas); color: var(--color-ink); font-size: 14px; line-height: 1.43; }
+  body { font-family: var(--font-main); background: var(--color-canvas); color: var(--color-ink); font-size: 14px; line-height: 1.4; }
   button { font-family: inherit; }
 
   .layout { display: flex; min-height: 100vh; }
 
   .sidebar {
-    width: 232px; background: var(--color-surface-alt); padding: 24px 16px;
+    width: 220px; background: var(--color-surface-alt); padding: 20px 14px;
     flex-shrink: 0; display: flex; flex-direction: column;
     border-right: 1px solid var(--color-hairline);
     transition: width 0.2s ease, padding 0.2s ease;
@@ -66,72 +66,81 @@
 
   .main { flex: 1; max-width: 1280px; min-width: 0; }
 
-  .topbar { display: flex; align-items: center; justify-content: space-between; padding: 20px 40px; border-bottom: 1px solid var(--color-hairline); gap: 16px; flex-wrap: wrap; }
-  .breadcrumb { font-size: 14px; color: var(--color-mid-gray); }
+  .topbar { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; border-bottom: 1px solid var(--color-hairline); gap: 16px; flex-wrap: wrap; }
+  .breadcrumb { font-size: 13px; color: var(--color-mid-gray); }
   .breadcrumb .current { color: var(--color-ink); font-weight: 500; }
   .breadcrumb .sep { margin: 0 8px; color: var(--color-hairline); }
-  .topbar-right { display: flex; align-items: center; gap: 14px; }
-  .last-updated { font-size: 12px; color: var(--color-mid-gray); white-space: nowrap; }
+  .topbar-right { display: flex; align-items: center; gap: 12px; }
+  .last-updated { font-size: 11px; color: var(--color-mid-gray); white-space: nowrap; }
   .btn-refresh {
     display: flex; align-items: center; gap: 6px; background: var(--color-canvas); border: none;
-    border-radius: 18px; padding: 7px 14px; font-size: 13px; font-weight: 500; color: var(--color-ink);
+    border-radius: 18px; padding: 6px 12px; font-size: 12.5px; font-weight: 500; color: var(--color-ink);
     cursor: pointer; transition: background 0.12s ease;
   }
   .btn-refresh:hover { background: var(--color-hairline); }
   .btn-refresh:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 2px; }
-  .btn-refresh svg { width: 13px; height: 13px; stroke-width: 2; }
+  .btn-refresh svg { width: 12px; height: 12px; stroke-width: 2; }
   .btn-refresh.spinning svg { animation: spin 0.7s linear infinite; }
 
-  .page { padding: 40px; }
-  .page-eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-mid-gray); font-weight: 500; margin-bottom: 8px; }
-  h1 { font-size: 30px; font-weight: 600; letter-spacing: -0.0075em; line-height: 1.2; margin-bottom: 4px; }
-  .page-sub { font-size: 14px; color: var(--color-mid-gray); margin-bottom: 32px; }
+  .page { padding: 24px; }
+  .page-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-mid-gray); font-weight: 600; margin-bottom: 6px; }
+  h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.0075em; line-height: 1.25; margin-bottom: 4px; }
+  .page-sub { font-size: 13px; color: var(--color-mid-gray); margin-bottom: 20px; line-height: 1.4; }
 
-  .hero-card { background: var(--color-paper); border-radius: 24px; box-shadow: var(--shadow-card); padding: 32px; margin-bottom: 20px; display: flex; align-items: center; gap: 40px; }
-  .donut-wrap { position: relative; width: 148px; height: 148px; flex-shrink: 0; }
+  .hero-card { background: var(--color-paper); border-radius: 20px; box-shadow: var(--shadow-card); padding: 22px 26px; margin-bottom: 16px; display: flex; align-items: center; gap: 28px; }
+  .donut-wrap { position: relative; width: 112px; height: 112px; flex-shrink: 0; }
   .donut-wrap svg { transform: rotate(-90deg); }
-  .donut-track { fill: none; stroke: var(--color-canvas); stroke-width: 12; }
-  .donut-fill { fill: none; stroke: var(--color-ink); stroke-width: 12; stroke-linecap: round; transition: stroke-dasharray 0.6s ease; }
+  .donut-track { fill: none; stroke: var(--color-canvas); stroke-width: 10; }
+  .donut-fill { fill: none; stroke: var(--color-ink); stroke-width: 10; stroke-linecap: round; transition: stroke-dasharray 0.6s ease; }
   .donut-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-  .donut-value { font-size: 30px; font-weight: 600; letter-spacing: -0.025em; }
-  .donut-label { font-size: 11px; color: var(--color-mid-gray); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; }
+  .donut-value { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+  .donut-label { font-size: 10px; color: var(--color-mid-gray); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 1px; }
   .hero-side { flex: 1; min-width: 0; }
-  .hero-eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-mid-gray); font-weight: 500; margin-bottom: 6px; }
-  .hero-headline { font-size: 36px; font-weight: 500; letter-spacing: -0.0225em; line-height: 1.11; margin-bottom: 12px; }
-  .hero-sub { font-size: 14px; color: var(--color-mid-gray); max-width: 480px; }
+  .hero-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-mid-gray); font-weight: 600; margin-bottom: 4px; }
+  .hero-headline { font-size: 26px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.2; margin-bottom: 8px; }
+  .hero-sub { font-size: 13px; color: var(--color-mid-gray); max-width: 480px; line-height: 1.4; }
 
-  .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px; }
-  .stat-block { background: var(--color-paper); border-radius: 24px; box-shadow: var(--shadow-card); padding: 20px; transition: box-shadow 0.15s ease, transform 0.15s ease; }
+  .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px; }
+  .stat-block { background: var(--color-paper); border-radius: 18px; box-shadow: var(--shadow-card); padding: 14px 16px; transition: box-shadow 0.15s ease, transform 0.15s ease; }
   .stat-block:hover { box-shadow: var(--shadow-card-hover); transform: translateY(-1px); }
   .stat-block.alert { box-shadow: var(--shadow-card), inset 0 0 0 1px rgba(231,0,11,0.15); }
-  .stat-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
-  .stat-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-mid-gray); font-weight: 500; }
-  .stat-icon { width: 16px; height: 16px; stroke: var(--color-mid-gray); stroke-width: 1.75; }
-  .stat-value { font-size: 30px; font-weight: 600; letter-spacing: -0.025em; }
+  .stat-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .stat-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-mid-gray); font-weight: 600; }
+  .stat-icon { width: 14px; height: 14px; stroke: var(--color-mid-gray); stroke-width: 1.75; }
+  .stat-value { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
   .stat-value.alert-text { color: var(--color-ember); }
-  .stat-delta { font-size: 12px; color: var(--color-mid-gray); margin-top: 4px; }
+  .stat-delta { font-size: 11px; color: var(--color-mid-gray); margin-top: 3px; }
 
-  .card { background: var(--color-paper); border-radius: 24px; box-shadow: var(--shadow-card); overflow: hidden; margin-bottom: 20px; }
-  .card-header { display: flex; justify-content: space-between; align-items: center; padding: 18px 20px; border-bottom: 1px solid var(--color-hairline); background: var(--color-surface-alt); }
-  .card-title { font-size: 15px; font-weight: 600; letter-spacing: -0.01em; }
-  .card-note { font-size: 12px; color: var(--color-mid-gray); }
-  .card-body { padding: 20px; }
+  .card { background: var(--color-paper); border-radius: 18px; box-shadow: var(--shadow-card); overflow: hidden; margin-bottom: 16px; }
+  .card-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--color-hairline); background: var(--color-surface-alt); }
+  .card-title { font-size: 13.5px; font-weight: 700; letter-spacing: -0.005em; }
+  .card-note { font-size: 11px; color: var(--color-mid-gray); }
+  .card-body { padding: 16px; }
 
-  .stacked-bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; margin-bottom: 14px; background: var(--color-canvas); }
+  .stacked-bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 10px; background: var(--color-canvas); }
   .stacked-seg { height: 100%; }
-  .stacked-legend { display: flex; flex-wrap: wrap; gap: 14px; }
-  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--color-mid-gray); }
-  .legend-swatch { width: 8px; height: 8px; border-radius: 2px; }
+  .stacked-legend { display: flex; flex-wrap: wrap; gap: 10px; }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--color-mid-gray); }
+  .legend-swatch { width: 7px; height: 7px; border-radius: 2px; }
 
+  .table-scroll { overflow-x: auto; overflow-y: auto; max-height: 560px; }
   table { width: 100%; border-collapse: collapse; }
-  th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-mid-gray); font-weight: 500; padding: 10px 20px; border-bottom: 1px solid var(--color-hairline); }
-  td { padding: 12px 20px; font-size: 14px; border-bottom: 1px solid var(--color-hairline); }
+  thead { position: sticky; top: 0; z-index: 1; }
+  th {
+    text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;
+    color: var(--color-mid-gray); font-weight: 700;
+    padding: 9px 12px; border-bottom: 1px solid var(--color-hairline);
+    background: var(--color-surface-alt);
+    white-space: nowrap;
+  }
+  th.num, td.num { text-align: right; }
+  td { padding: 8px 12px; font-size: 13px; border-bottom: 1px solid var(--color-hairline); line-height: 1.4; }
   tr:last-child td { border-bottom: none; }
   tr.clickable { cursor: pointer; transition: background 0.1s ease; }
   tr.clickable:hover { background: var(--color-surface-alt); }
   tr.clickable:focus-visible { outline: 2px solid var(--color-ink); outline-offset: -2px; }
   .mono { font-variant-numeric: tabular-nums; }
-  .cell-primary { font-weight: 500; }
+  .cell-primary { font-weight: 600; }
 
   .badge { display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px; border-radius: 18px; font-size: 12px; font-weight: 500; white-space: nowrap; }
   .badge-dot { width: 5px; height: 5px; border-radius: 50%; }
@@ -211,7 +220,7 @@
   .breakdown-bar-fill { height: 100%; background: var(--color-ink-soft); border-radius: 3px; transition: width 0.4s ease; }
   .breakdown-count { font-weight: 500; min-width: 24px; text-align: right; }
 
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
 
   .urgent-list { display: flex; flex-direction: column; gap: 2px; }
   .urgent-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--color-hairline); font-size: 13.5px; }
@@ -433,7 +442,7 @@ function donutSVG(pct) {
   const filled = (pct / 100) * circumference;
   return `
     <div class="donut-wrap">
-      <svg width="148" height="148" viewBox="0 0 148 148">
+      <svg width="100%" height="100%" viewBox="0 0 148 148" preserveAspectRatio="xMidYMid meet">
         <circle class="donut-track" cx="74" cy="74" r="${r}"/>
         <circle class="donut-fill" cx="74" cy="74" r="${r}" stroke-dasharray="${filled} ${circumference}"/>
       </svg>
@@ -591,8 +600,8 @@ async function renderInvoices() {
         <td class="cell-primary">${inv.invoice_id}</td>
         <td>${inv.customer_name || inv.customer_id}</td>
         <td><span class="badge badge-outline">${inv.relationship_tier || '—'}</span></td>
-        <td class="mono">${fmtINR(inv.remaining_amount)}</td>
-        <td class="mono">${inv.days_overdue}d</td>
+        <td class="mono num">${fmtINR(inv.remaining_amount)}</td>
+        <td class="mono num">${inv.days_overdue}d</td>
         <td>${statusBadge(inv.current_status)}</td>
       </tr>`; }).join('');
 
@@ -600,10 +609,12 @@ async function renderInvoices() {
       <div class="page-eyebrow">Ledger</div><h1>Invoices</h1>
       <div class="page-sub">${data.count} invoices tracked — click a row for full real history</div>
       <div class="card">
+        <div class="table-scroll">
         <table>
-          <thead><tr><th>Invoice</th><th>Customer</th><th>Tier</th><th>Remaining</th><th>Overdue</th><th>Status</th></tr></thead>
+          <thead><tr><th>Invoice</th><th>Customer</th><th>Tier</th><th class="num">Remaining</th><th class="num">Overdue</th><th>Status</th></tr></thead>
           <tbody>${rows}</tbody>
         </table>
+        </div>
       </div>`;
   } catch (e) {
     setConnection(false);
@@ -659,7 +670,7 @@ async function renderExceptions() {
         <td class="cell-primary">${e.invoice_id}</td>
         <td>${e.customer_name}</td>
         <td><span class="badge badge-outline">${e.relationship_tier}</span></td>
-        <td class="mono">${fmtINR(e.remaining_amount)}</td>
+        <td class="mono num">${fmtINR(e.remaining_amount)}</td>
         <td>${statusBadge(e.status)}</td>
         <td style="max-width:320px; font-size:13px; color:var(--color-mid-gray)">${e.reason}</td>
       </tr>`; }).join('');
@@ -668,10 +679,12 @@ async function renderExceptions() {
       <div class="page-eyebrow">Honest reporting</div><h1>Exceptions</h1>
       <div class="page-sub">${data.count} invoices need manual follow-up — this is the honest, unresolved list</div>
       <div class="card">
+        <div class="table-scroll">
         <table>
-          <thead><tr><th>Invoice</th><th>Customer</th><th>Tier</th><th>At risk</th><th>Status</th><th>Reason</th></tr></thead>
+          <thead><tr><th>Invoice</th><th>Customer</th><th>Tier</th><th class="num">At risk</th><th>Status</th><th>Reason</th></tr></thead>
           <tbody>${rows}</tbody>
         </table>
+        </div>
       </div>`;
   } catch (e) {
     setConnection(false);
@@ -696,7 +709,7 @@ async function renderAudit() {
         <td class="cell-primary">${e.invoice_id}</td>
         <td><span class="badge badge-outline">${(e.action||'').replace(/_/g,' ')}</span></td>
         <td>${e.outcome || '—'}</td>
-        <td class="mono">${fmtINR(e.amount_recovered)}</td>
+        <td class="mono num">${fmtINR(e.amount_recovered)}</td>
         <td>${e.human_decision ? `<span class="badge badge-solid">${e.human_decision}</span>` : '—'}</td>
       </tr>`; }).join('');
 
@@ -704,10 +717,12 @@ async function renderAudit() {
       <div class="page-eyebrow">Full transparency</div><h1>Audit Trail</h1>
       <div class="page-sub">Showing ${data.count} most recent entries — every action, outcome, and amount is real</div>
       <div class="card">
+        <div class="table-scroll">
         <table>
-          <thead><tr><th>Date</th><th>Invoice</th><th>Action</th><th>Outcome</th><th>Recovered</th><th>Human decision</th></tr></thead>
+          <thead><tr><th>Date</th><th>Invoice</th><th>Action</th><th>Outcome</th><th class="num">Recovered</th><th>Human decision</th></tr></thead>
           <tbody>${rows}</tbody>
         </table>
+        </div>
       </div>`;
   } catch (e) {
     setConnection(false);
